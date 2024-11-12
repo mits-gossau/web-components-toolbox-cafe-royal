@@ -9,24 +9,25 @@
 
 /* custom alnatura fonts */
 @font-face {
-  font-family: "FrutigerRegular";
-  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Frutiger/Frutiger55Roman.woff2") format("woff2"), url("https://cdn.migros.ch/ch.migros/static/fonts/Frutiger/Frutiger55Roman.woff") format("woff");
-  font-weight: normal;
+  font-family: 'JostRegular';
   font-style: normal;
+  font-weight: 400;
   font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNIg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "FrutigerBold";
-  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Frutiger/Frutiger65Bold.woff2") format("woff2"), url("https://cdn.migros.ch/ch.migros/static/fonts/Frutiger/Frutiger65Bold.woff") format("woff");
-  font-weight: normal;
+  font-family: 'JostBold';
   font-style: normal;
+  font-weight: 500;
   font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7myRJTVBNIg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-@font-face {
+/* @font-face {
   font-family: "KalamRegular";
-  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Kalam/Kalam-Regular.woff") format("woff");
+  src: url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap') format("Jost");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -34,34 +35,23 @@
 
 @font-face {
   font-family: 'Helvetica Neue Condensed';
-  src: url(https://cdn.migros.ch/ch.migros/static/fonts/helveticaneue-condensed-bold/helveticaneue-condensed-bold.woff);
+  src: url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 :root {
-  --background-color: #ffffff;
+  --background-color: white;
   --bg-line-height: 1.5em;
-  --button-category-color-custom: #ffffff;
-  --button-category-background-color-active-custom: #ffffff;
-  --button-category-color-hover-custom:var(--color-secondary);
-  --button-category-border-width: 2px;
-  --button-category-border-color: var(--color-secondary);
-  --button-category-border-radius-custom: 5px;
-  --button-category-background-color-hover-custom:#ffffff;
-  --button-category-background-color-custom:var(--color-secondary);
-  --button-category-background-color-hover-mobile-custom: var(--color-secondary);
-  --button-secondary-background-color-active:var(--color-secondary);
-  --button-secondary-background-color-hover:var(--color-secondary);
-  --button-secondary-color-active: #ffffff;
-  --button-secondary-background-color-hover: var(--color-secondary);
-  --color-active: #592037;
-  --color-disabled: #592037;
-  --color-hover: #b37187;
-  --color-quaternary:#ffffff;
-  --color-secondary: #8b254c;
-  --color-tertiary: #b5ce34;
+  --button-category-background-color-custom:var(--color-quaternary);
+  --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
+  --color-active: var(--color-tertiary);
+  --color-disabled: #A4A4A4;
+  --color-hover: var(--color-tertiary);
+  --color-secondary: #311141;
+  --color-tertiary: #97e05c;
+ --details-default-icon-right-a-text-decoration: none;
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
   --download-color-custom: var(--color-tertiary);
@@ -69,10 +59,12 @@
   --emotion-pictures-with-button-img-max-height: var(--emotion-pictures-default-img-max-height);
   --emotion-pictures-with-logo-img-max-height: var(--emotion-pictures-default-img-max-height);
   --emotion-pictures-with-title-img-max-height: var(--emotion-pictures-default-img-max-height);
-  --font-family-bold: FrutigerBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --font-family-secondary: KalamRegular, Avenir35Light, sans-serif;
-  --font-family: FrutigerRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --footer-default-h4-color: var(--background-color);
+  --font-family-bold: JostBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --font-family-secondary: JostRegular, Avenir35Light, sans-serif;
+  --font-family: JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
+ --footer-default-text-decoration: none; 
+ --footer-default-a-text-decoration: none;
+ --footer-default-h4-color: var(--background-color);
   --footer-default-invert-a-color-hover-custom: var(--color-tertiary);
   --footer-default-invert-color-hover-custom: var(--color-tertiary);
   --footer-default-invert-orange-a-color-hover-custom: var(--color-hover);
@@ -80,27 +72,43 @@
   --footer-default-invert-svg-color-custom: var(--background-color);
   --footer-default-invert-svg-color-hover-custom: var(--color-tertiary);
   --h-color: var(--color-secondary);
-  --h1-font-size: calc(1.5 * 1.75em);
+  --h1-font-size: calc(1.3 * 1.75em);
   --h6-font-family: var(--font-family-secondary);
   --h6-font-size: var(--h2-font-size, 1.5em);
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
   --header-default-a-logo-top-mobile-custom: -0.5em;
+  --header-default-a-menu-icon-background-color-custom: var(--color-secondary);
+  --header-default-background-color-custom: var(--background-color);
+  --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
   --header-default-logo-width-custom: min(9em, 138px);
   --hr-border-bottom: 2px dotted var(--m-gray-600);
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
-  --navigation-alnatura-a-link-line-height-mobile: 1.5;
-  --navigation-alnatura-a-link-line-height: 1.5;
-  --navigation-alnatura-color-mobile-custom: var(--navigation-alnatura-color-second-level-custom);
-  --navigation-alnatura-color-second-level-custom: var(--color);
-  --navigation-alnatura-line-height-mobile: 1.5;
+  --language-switcher-default-content-width: var(--header-default-content-width);
+  --navigation-default-a-link-line-height-mobile: 1.5;
+  --navigation-default-a-link-line-height: 1.5;
+  /* --navigation-default-background-color: #ECECE8; */
+  --navigation-default-color-custom: var(--color-secondary);
+  --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
+  --navigation-default-color-second-level-custom: var(--color);
+  --navigation-default-line-height-mobile: 1.5;
   --news-alnatura-line-height-mobile:100%;
   --news-alnatura-line-height:100%;
-  --news-alnatura-li-before-left: -18px;
   --picture-close-btn-background-color:var(--color-secondary);
   --search-input-width-big:100%;
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
   --title-border-display: none;
+  --h-border-after: true;
+  --h-border-after-background-color: var(--color-tertiary);
+  --h-border-after-height: 3px;
+  --h-border-after-left: 50%;
+  --h-border-after-transform: -50%;
+  --recipe-table-header-height: 3em;
+  --wrapper-text-flex-wrap: wrap;
+  --content-spacing: 1.7em;
+  --content-spacing-mobile: 2rem;
+  --hr-border-bottom: 2px dotted #949494;
+  
 }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang=en>
+
 <head>
   <title>Overview</title>
 </head>
+
 <body>
   <h1>web-components-toolbox-cafe-royal</h1>
   <h2>Setup</h2>
@@ -16,20 +18,34 @@
   <h3>Pages</h3>
   <div id=pages></div>
   <script>
-    const pageQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&login=./src/es/components/web-components-toolbox/src/es/components/msrc/login/default-/default-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/web-components-toolbox/src/es/components/molecules/navigation/alnatura-/alnatura-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
+    // const pageQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&login=./src/es/components/web-components-toolbox/src/es/components/msrc/login/default-/default-.html&logo=/src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/molecules/navigation/delica-/delica-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
+    // const pageQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&login=./src/es/components/web-components-toolbox/src/es/components/msrc/login/default-/default-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/web-components-toolbox/src/es/components/molecules/navigation/alnatura-/alnatura-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
+    // const pageQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&login=./src/es/components/web-components-toolbox/src/es/components/molecules/languageSwitcher/delica-/delica-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/web-components-toolbox/src/es/components/molecules/multiLevelNavigation/default-/default-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
+    const pageQuery = 'rootFolder=src&css=./src/css/variablesCustom.css&login=./src/es/components/molecules/headerSection/default-/default-.html&logo=./src/es/components/atoms/logo/default-/default-.html&nav=./src/es/components/molecules/navigation/multiLevel-/multiLevel-.html&footer=./src/es/components/organisms/footer/default-/default-.html'
+
     document.querySelector('#pages').innerHTML = /* HTML */`
-      <ul>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Home.html">Home</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Menu.html">Menu</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/ContactForm.html">Kontaktformular</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Products.html">Product List</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/ProductDetail.html">Product Detail</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/ProductDetailTwo.html">Product Detail Two</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/RecipeDetail.html">Recipe Detail</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/StoreFinder.html">Store Finder</a></li>
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/Recipes.html">Recipes</a></li> 
-        <li><a href="./src/es/components/web-components-toolbox/docs/Template.html?${pageQuery}&content=./src/es/components/pages/NewsList.html">News</a></li>
-        <li><a href="./src/es/components/pages/HomeTestPage29042023.html">HomeTestPage29042023</a></li>
+      <ul>  
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/FrontendDemo.html">Frontend Demo</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/BrandWrapper.html">BrandWrapper</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/ContactForm.html">ContactForm</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/SimpleForm.html">SimpleForm</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/TeaserFE.html">TeaserFE</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/YearCarousel.html">YearCarousel</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/EmotionCarousel.html">EmotionCarousel</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/StandortePicker.html">StandortePicker</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/StandortePickerEinzel.html">StandortePickerEinzel</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/ProjektListeWrapper.html">ProdukteListeWrapper</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/RecipeTable.html">RecipeTable</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/RecipeAccordeon.html">RecipeAccordeon</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/SustainabilityMetrics.html">SustainabilityMetrics</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/ScrollToTop.html">ScrollToTop</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/Distributoren.html">Distributoren</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/Geschäftsleitung.html">Geschäftsleitung</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/WrapperTeaser.html">WrapperTeaser</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/testSite.html">matteoEinführung</a></li>
+        <li><a href="./src/es/components/web-components-toolbox/docs/TemplateDelica.html?${pageQuery}&content=./src/es/components/pages/testFabienne.html">FabienneTest</a></li>        
+
+        
       </ul>
     `
   </script>
@@ -39,4 +55,5 @@
     <li><a href="./src/es/components/web-components-toolbox/">Base web-components-toolbox</a></li>
   </ul>
 </body>
+
 </html>
