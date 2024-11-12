@@ -126,7 +126,7 @@ export default class TeaserFe extends Shadow() {
         }
 
         .image:hover .title{
-            color: var(--TeaserFe-hover-title-color, rgb(214, 169, 88));
+            color: var(--color-tertiary, rgb(214, 169, 88));
 
         }
         
