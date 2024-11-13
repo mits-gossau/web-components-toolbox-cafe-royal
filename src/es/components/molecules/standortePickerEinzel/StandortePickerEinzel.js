@@ -60,9 +60,14 @@ export default class StandortePickerEinzel extends Shadow() {
         height: var(--StandortePickerEinzel-height, 100%);
       }
 
+      :host m-image-hotspot {
+        margin: auto;
+      }
+
       .slide {
         display: var(--StandortePickerEinzel-display, flex);
         text-align: var(--StandortePickerEinzel-text-align, left);
+        align-items: stretch;
       }
 
       a-picture {
@@ -87,16 +92,15 @@ export default class StandortePickerEinzel extends Shadow() {
       }
 
       .left-container {
-        width: var(--StandortePickerEinzel-left-container-width, 60%);
-        height: var(--StandortePickerEinzel-left-container-height, 100%);
         padding: var(--StandortePickerEinzel-left-container-padding, 2%);
+        flex: 2.2;
+        margin: auto;
       }
 
       .right-container {
         padding: var(--StandortePickerEinzel-right-container-padding, 3%);
-        width: var(--StandortePickerEinzel-right-container-width, 30%);
-        height: var(--StandortePickerEinzel-right-container-height, 26em);
         border-left: var(--StandortePickerEinzel-right-container-border-left, 1px solid grey);
+        flex: 1;
       }
 
       .active {
@@ -129,7 +133,12 @@ export default class StandortePickerEinzel extends Shadow() {
         .left-container {
           width: var(--StandortePickerEinzel-left-container-width, 100%);
         }
+
+        a-hotspot .content {
+          display: none !important;
       }
+      }
+    
     `
   }
 }
