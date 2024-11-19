@@ -98,19 +98,20 @@
 } */
 
 :root {
-  --a-color: #121212;
+  --a-color: var(--color-tertiary);
   --background-color: #ffffff;
   --background-secondary: #f5f3ec;
   --background-tertiary: #000000;
   --bg-line-height: 1.5em;
   --button-category-background-color-custom:var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
-  --color: #173f35; /* nur geraten */
-  --color-active: var(--color-tertiary);
+  --button-primary-background-color-custom: var(--color-tertiary);
+  --color: #173f35;
+  --color-active: var(--color);
   --color-disabled: #A4A4A4;
-  --color-hover: var(--color-tertiary);
-  --color-secondary: #f2f2f2; /* pfeil-farbe von scroll-to-top, footer background */
-  --color-tertiary: #121212; /* background von scroll-to-top, h4 innerhalb von footer, text innerhalb von footer */
+  --color-hover: var(--color);
+  --color-secondary: #f2f2f2;
+  --color-tertiary: #121212; 
   --details-default-icon-right-a-text-decoration: none;
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
@@ -122,18 +123,18 @@
   --font-family-bold: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --font-family-secondary: Lexend-Regular, JostRegular, Avenir35Light, sans-serif;
   --font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --footer-background: var(--color-secondary); /* #f2f2f2 */
+  --footer-background: var(--color-secondary);
   --footer-default-text-decoration: none;
   --footer-default-a-text-decoration: none;
-  --footer-default-h4-color: var(--color-tertiary); /* #121212 */
+  --footer-default-h4-color: var(--color-tertiary);
   --footer-default-invert-a-color-hover-custom: var(--color-tertiary);
-  --footer-default-invert-color-custom: var(--color-tertiary); /* #121212, text innerhalb von footer */
+  --footer-default-invert-color-custom: var(--color-tertiary);
   --footer-default-invert-color-hover-custom: var(--color-tertiary);
   --footer-default-invert-orange-a-color-hover-custom: var(--color-hover);
   --footer-default-invert-orange-background-color-custom: var(--color-tertiary);
   --footer-default-invert-svg-color-custom: var(--background-color);
   --footer-default-invert-svg-color-hover-custom: var(--color-tertiary);
-  --h-color: var(--color-tertiary); /* #121212 */
+  --h-color: var(--color-tertiary);
   --h-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h-text-align: center;
   --h1-font-size: 2.25em;
@@ -158,6 +159,7 @@
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
   --language-switcher-default-content-width: var(--header-default-content-width);
+  --nav-level-item-default-hover-background-color: var(--background-secondary);
   --navigation-default-a-link-line-height-mobile: 1.5;
   --navigation-default-a-link-line-height: 1.5;
   /* --navigation-default-background-color: #ECECE8; */
@@ -168,13 +170,15 @@
   --news-alnatura-line-height-mobile:100%;
   --news-alnatura-line-height:100%;
   --news-alnatura-li-before-left: -18px;
-  --p-color: #121212;
+  --p-color: var(--color-tertiary);
   --p-font-size: 1em;
   --p-line-height: 1.5em;
   --p-text-align: center;
   --picture-close-btn-background-color:var(--color-secondary);
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
   --search-input-width-big: 100%;
+  --standorte-picker-color-active: var(--color);
+  --TeaserFe-hover-title-color: var(--color-active);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
   --title-border-display: none;

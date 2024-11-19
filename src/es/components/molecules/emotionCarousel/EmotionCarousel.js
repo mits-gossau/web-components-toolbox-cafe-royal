@@ -172,7 +172,7 @@ export default class EmotionCarousel extends Shadow() {
             justify-content: flex-end;
           }
           .section:hover{
-            --color: rgb(173, 142, 86);
+            --color: var(--color-active);
           }
 
           .link-description {
