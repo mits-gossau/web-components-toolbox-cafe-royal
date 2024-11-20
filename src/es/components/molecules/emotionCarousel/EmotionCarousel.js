@@ -39,6 +39,9 @@ export default class EmotionCarousel extends Shadow() {
     })
 
     this.prevButton?.addEventListener('click', () => {
+      clearInterval(timer)
+      timer = setInterval(changeSlide, 10000)
+      
       if (curSlide === 0) {
         curSlide = this.slides.length - 1
       } else {
@@ -172,7 +175,7 @@ export default class EmotionCarousel extends Shadow() {
             justify-content: flex-end;
           }
           .section:hover{
-            --color: rgb(173, 142, 86);
+            --color: var(--color-active);
           }
 
           .link-description {

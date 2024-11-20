@@ -21,9 +21,6 @@ export default class HeaderSection extends Shadow() {
         align-items: var(--HeaderSection-align-items, center);
         flex-direction: var(--HeaderSection-flex-direction, row);
         padding-right: var(--HeaderSection-padding-right, 1em);
-
-
-
     }
 
     :host section m-language-switcher{
@@ -33,10 +30,8 @@ export default class HeaderSection extends Shadow() {
     @media screen and (max-width: 1200px) {
         :host{
             display: var(--HeaderSection-display-mobile, none);
-            
         }
-      }
-
-        `
+    }
+    `
   }
 }
