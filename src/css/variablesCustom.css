@@ -153,4 +153,7 @@
   --TeaserFe-hover-title-color: var(--color-active);
   --title-border-display: none;
   --wrapper-text-flex-wrap: wrap;
+  --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
+  --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
+  --multi-level-navigation-delica-a-main-content-spacing: 1rem 0.8rem 0 0.8rem;
 }
