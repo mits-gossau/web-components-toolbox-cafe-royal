@@ -60,23 +60,33 @@
 }
 
 :root {
+  /* -- custom colors */
+  --color-whit: #FFFFFF;
+  --color-spring-wood: #F5F3EC;
+  --color-black:#000000;
+  --color-silver-chalice:#A4A4A4;
+  --color-concrete:#F2F2F2;
+  --color-cod-gray:#121212;
+  --color-mine-shaft:#212121;
+  --color-dusty-gray:#949494;
+  /* standard toolbox */
   --a-color: var(--color-tertiary);
-  --background-color: #ffffff;
-  --background-secondary: #f5f3ec;
-  --background-tertiary: #000000;
+  --background-color: var(--color-white);
+  --background-secondary: var(--color-spring-wood);
+  --background-tertiary: var(--color-black);
   --bg-line-height: 1.5em;
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
   --color-active: var(--color);
-  --color-disabled: #A4A4A4;
+  --color-disabled: var(--color-silver-chalice);
   --color-hover: var(--color);
-  --color-secondary: #f2f2f2;
-  --color-tertiary: #121212;
-  --color: #121212;
+  --color-secondary: var(--color-concrete);
+  --color-tertiary: var(--color-cod-gray);
+  --color: var(--color-cod-gray);
   --content-spacing-mobile: 2rem;
   --content-spacing: 1.7em;
-  --details-default-summary-child-color-custom: #212121;
+  --details-default-summary-child-color-custom: var(--color-mine-shaft);
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
   --download-color-custom: var(--color-tertiary);
@@ -85,7 +95,7 @@
   --font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
   --footer-default-a-text-decoration: none;
   --footer-default-invert-a-color-hover-custom: var(--color-tertiary);
-  --footer-default-invert-background-color-custom:#F2F2F2;
+  --footer-default-invert-background-color-custom:var(--color-concrete);
   --footer-default-invert-color-custom: var(--color-tertiary);
   --footer-default-invert-color-hover-custom: var(--color-tertiary);
   --footer-default-invert-orange-a-color-hover-custom: var(--color-hover);
@@ -122,7 +132,7 @@
   --header-default-background-color-custom: var(--background-color);
   --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
   --header-default-logo-width-custom: min(9em, 138px);
-  --hr-border-bottom: 2px dotted #949494;
+  --hr-border-bottom: 2px dotted var(--color-dusty-gray);
   --hr-border-bottom: 2px dotted var(--m-gray-600);
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
