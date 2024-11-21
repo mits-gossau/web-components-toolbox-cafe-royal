@@ -8,55 +8,55 @@
 /* 100 */
 @font-face {
   font-family: "Lexend-Thin";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-Thin.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Thin.woff2") format("woff2");
 }
 
 /* 200 */
 @font-face {
   font-family: "Lexend-ExtraLight";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-ExtraLight.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-ExtraLight.woff2") format("woff2");
 }
 
 /* 300*/
 @font-face {
   font-family: "Lexend-Light";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-Light.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Light.woff2") format("woff2");
 }
 
 /* 400 */
 @font-face {
   font-family: "Lexend-Regular";
-  src: url(https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Regular.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Regular.woff2") format("woff2");
 }
 
 /* 500 */
 @font-face {
   font-family: "Lexend-Medium";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-Medium.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Medium.woff2") format("woff2");
 }
 
 /* 600 */
 @font-face {
   font-family: "Lexend-SemiBold";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-SemiBold.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-SemiBold.woff2") format("woff2");
 }
 
 /* 700 */
 @font-face {
   font-family: "Lexend-Bold";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-Bold.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Bold.woff2") format("woff2");
 }
 
 /* 800 */
 @font-face {
   font-family: "Lexend-ExtraBold";
-  src: url(https://cdn.migros.ch/ch.migros/ch.migros/static/fonts/Lexend/Lexend-ExtraBold.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-ExtraBold.woff2") format("woff2");
 }
 
 /* 900 */
 @font-face {
   font-family: "Lexend-Black";
-  src: url(https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Black.woff2) format("woff2");
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Black.woff2") format("woff2");
 }
 
 :root {
