@@ -55,17 +55,9 @@
         </div>
     </div>
 </d-m-emotion-carousel>
-<div>
-    <cr-m-product-teaser namespace="product-teaser-default-"></cr-m-product-teaser>
-</div>
-<h1>Willkommen zur Frontend Demo</h1>
-<h2>h2</h2>
-<h3>h3</h3>
-<h4>h4</h4>
-<h5>h5</h5>
-<h6>h6</h6>
-<p>p</p>
-<p>Von den rund 100'000 <a href="#">Kaffeebauern</a> in Honduras besitzen die meisten nur kleine Anbauflächen und müssen für die
+<div class="spacer-two"></div>
+<h1>Wilkommen zur Frontend Demo</h1>
+<p>Von den rund 100‘000 Kaffeebauern in Honduras besitzen die meisten nur kleine Anbauflächen und müssen für die
     Verarbeitung und den Verkauf des Kaffees einen weiten Weg auf sich nehmen. Viele leben fast ausschliesslich vom
     Kaffeeanbau. Ein ertragsarmes Jahr oder Ernteausfälle durch klimatische Veränderungen können für die Familien
     verheerende Folgen haben.</p>
@@ -174,14 +166,16 @@
     accusamus excepturi sequi minima repellat delectus iure illo necessitatibus qui, quae sunt at?
     Voluptatum excepturi dicta ea possimus amet, adipisci ipsa optio dolorum sapiente magni doloribus? Iste ad
     blanditiis modi rerum cumque, commodi sequi itaque vel fugit voluptatibus a ratione! Id, commodi doloribus?</p>
-<!-- <h1>Unsere Standorte</h1>
-<div class="spacer"></div> -->
-<!-- <d-m-standorte-picker>
+<div class="spacer-two"></div>
+<h1>Unsere Standorte</h1>
+<div class="spacer"></div>
+<d-m-standorte-picker>
     <m-tabs scroll-to-view>
         <ul class="tab-navigation">
             <li data-tab="quote-requets">Schweiz</li>
             <li data-tab="favorites">Europa</li>
             <li data-tab="settings">Weltweit</li>
+            <li data-tab="settings">Test</li>
         </ul>
         <section class="tab-content">
             <d-m-standorte-picker-einzel>
@@ -189,27 +183,34 @@
                     <div class="left-container">
                         <m-image-hotspot>
                             <a-picture namespace="picture-hotspot-" alt="Schweizer-Karte"
+                            <a-picture namespace="picture-hotspot-" alt="Schweizer-Karte"
                                 defaultSource="../../molecules/standortePickerEinzel/default-/img/Karten_Schweiz.png"
                                 loading=eager picture-load>
+                                loading=eager picture-load>
                             </a-picture>
-
+      
                             <a-hotspot top="14.777778" left="40" place="none" id="1">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="23.333333" left="47.25" place="none" id="2">
                                 <div style="display: none !important;" class="content">
+                                <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="30.333333" left="60.25" place="none" id="3">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="78" left="62.75" place="none" id="4">
                                 <div style="display: none !important;" class="content">
+                                <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="91.333333" left="65.25" place="none" id="5">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
@@ -325,26 +326,33 @@
                     <div class="left-container">
                         <m-image-hotspot>
                             <a-picture namespace="picture-hotspot-" alt="Schweizer-Karte"
+                            <a-picture namespace="picture-hotspot-" alt="Schweizer-Karte"
                                 defaultSource="../../molecules/standortePickerEinzel/default-/img/Karten_Schweiz.png"
+                                loading=eager picture-load>
                                 loading=eager picture-load>
                             </a-picture>
                             <a-hotspot top="14.777778" left="40" place="none" id="1">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="23.333333" left="47.25" place="none" id="2">
                                 <div style="display: none !important;" class="content">
+                                <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="30.333333" left="60.25" place="none" id="3">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="78" left="62.75" place="none" id="4">
                                 <div style="display: none !important;" class="content">
+                                <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="91.333333" left="65.25" place="none" id="5">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
@@ -459,29 +467,162 @@
                 <div class="slide">
                     <div class="left-container">
                         <m-image-hotspot>
-                            <a-picture namespace="hotspot-picture-" alt="Schweizer-Karte"
-                                defaultSource="../../molecules/standortePickerEinzel/default-/img/Karten_Schweiz.png"
-                                loading=eager picture-load>
-
+                            <a-picture picture-load namespace="picture-hotspot-" alt="Dergarten" defaultSource="./img/assamoi.png">
                             </a-picture>
+                            <a-hotspot top="33.777777777777779" left="73" place="none" id="1">
+                                <div style="display: none;" >
+                                </div>
+                            </a-hotspot>
+                            <a-hotspot top="49.333333333333336" left="80.25" place="none" id="2">
+                                <div style="display: none !important;" class="content">
+                                </div>
+                            </a-hotspot>
+                            <a-hotspot top="68" left="81.75" place="bottom" id="3">
+                                <div style="display: none !important;" class="content">
+                                </div>
+                            </a-hotspot>
+                            <a-hotspot top="63.555555555555557" left="72.25" place="none" id="4">
+                                <div style="display: none !important;" class="content">
+                                </div>
+                            </a-hotspot>
+                          </m-image-hotspot>
+                    </div>
+                    <div class="right-container">
+                        <div class="description" id="default">
+                            <h2>Delica AG Schweiz</h2>
+                            <p>
+                                Die Delica AG verfügt über fünf Standorte in der Schweiz und mehrere Geschäftsstellen im
+                                Ausland. International ist die Delica AG mit Handelsplattformen in den USA, Frankreich,
+                                Deutschland, China, den Niederlanden sowie in Spanien vertreten.
+                            </p>
+                        </div>
+                        <div class="description" id="1">
+                            <a-picture defaultSource="../../../../img/delica-logo-rgb.png" alt="Öffnungszeiten"
+                                loading=eager></a-picture>
+                            <h2>Standort Birsfelden</h2>
+                            <p>Am Standort Birsfelden im Kanton Basel-Landschaft werden hauptsächlich Produkte aus den
+                                Bereichen Kaffee (Röstkaffee sowie Kapselsysteme) sowie Snack- und Koch-Produkte
+                                (Trockenfrüchte, Nüsse, Apéro, Gewürze usw.) hergestellt.
+                            </p>
+                            <p>
+                                Delica AG
+                                <br>
+                                Hafenstrasse 120
+                                <br>
+                                CH-4127 Birsfelden
+                            </p>
+                            <p>
+                                T +41 (0) 58 564 60 00
+                            </p>
+                        </div>
+                        <div class="description" id="2">
+                            <a-picture defaultSource="../../../../img/delica-logo-rgb.png" alt="Öffnungszeiten"
+                                loading=eager></a-picture>
+                            <h2>Standort Buchs
+                            </h2>
+                            <p>Am Standort Buchs im Kanton Aargau werden Schokolade sowie Kaugummi in bester Schweizer
+                                Qualität hergestellt.</p>
+                            <p>
+                                Delica AG
+                                <br>
+                                Bresteneggstrasse 4
+                                <br>
+                                CH-5033 Buchs AG
+                            </p>
+                            <p>
+                                T +41 (0) 58 564 60 00
+                            </p>
+                        </div>
+                        <div class="description" id="3">
+                            <a-picture defaultSource="../../../../img/delica-logo-rgb.png" alt="Öffnungszeiten"
+                                loading=eager></a-picture>
+                            <h2>Standort Meilen</h2>
+                            <p>Am Standort Meilen im Kanton Zürich werden erstklassige Guezli, Glacen und Snacks in
+                                bester Qualität hergestellt.
+                            </p>
+                            <p>
+                                Delica AG
+                                <br>
+                                Bruechstrasse 70
+                                <br>
+                                CH-8706 Meilen
 
+                            </p>
+                            <p>
+                                T +41 (0) 58 564 60 00
+                            </p>
+                        </div>
+                        <div class="description" id="4">
+                            <a-picture defaultSource="../../../../img/delica-logo-rgb.png" alt="Öffnungszeiten"
+                                loading=eager></a-picture>
+                            <h2>Standort Taverne </h2>
+                            <p>Am Standort Taverne im Kanton Tessin werden zahlreiche Sorten Rohreis in den
+                                verschiedensten Farben und Formen aus aller Welt verarbeitet.
+                            </p>
+                            <p>
+                                Delica AG
+                                <br>
+                                Via Ponte Vecchio
+                                <br>
+                                CH-6807 Taverne
+                            </p>
+                            <p>
+                                T +41 (0) 58 564 60 00
+                            </p>
+                        </div>
+                        <div class="description" id="5">
+                            <a-picture defaultSource="../../../../img/delica-logo-rgb.png" alt="Öffnungszeiten"
+                                loading=eager></a-picture>
+                            <h2>Standort Stabio</h2>
+                            <p>Am Standort Stabio im Kanton Tessin werden seit 2015 hochwertige Produkte im Bereich
+                                Kaffee hergestellt mit Fokus auf Private Label-Kaffeekapseln.
+                            </p>
+                            <p>
+                                Delica AG
+                                <br>
+                                Via Baragge 1
+                                <br>
+                                CH-6855 Stabio
+                            </p>
+                            <p>
+                                T +41 (0) 58 564 60 00
+                            </p>
+                        </div>
+                    </div>
+            </d-m-standorte-picker-einzel>
+        </section>
+        <section class="tab-content">
+            <d-m-standorte-picker-einzel>
+                <div class="slide">
+                    <div class="left-container">
+                        <m-image-hotspot>
+                            <a-picture namespace="picture-hotspot-" alt="Schweizer-Karte"
+                                defaultSource="./img/Glace_002.jpg"
+                                loading=eager picture-load>
+                            </a-picture>
+      
                             <a-hotspot top="14.777778" left="40" place="none" id="1">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="23.333333" left="47.25" place="none" id="2">
                                 <div style="display: none !important;" class="content">
+                                <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="30.333333" left="60.25" place="none" id="3">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="78" left="62.75" place="none" id="4">
                                 <div style="display: none !important;" class="content">
+                                <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>
                             <a-hotspot top="91.333333" left="65.25" place="none" id="5">
+                                <div style="display: none !important;" class="content">
                                 <div style="display: none !important;" class="content">
                                 </div>
                             </a-hotspot>

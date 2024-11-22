@@ -66,9 +66,14 @@ export default class StandortePickerEinzel extends Shadow() {
         margin: auto;
       }
 
+      :host m-image-hotspot {
+        margin: auto;
+      }
+
       .slide {
         display: var(--StandortePickerEinzel-display, flex);
         text-align: var(--StandortePickerEinzel-text-align, left);
+        align-items: stretch;
         align-items: stretch;
       }
 
@@ -97,11 +102,14 @@ export default class StandortePickerEinzel extends Shadow() {
         padding: var(--StandortePickerEinzel-left-container-padding, 2%);
         flex: 2.2;
         margin: auto;
+        flex: 2.2;
+        margin: auto;
       }
 
       .right-container {
         padding: var(--StandortePickerEinzel-right-container-padding, 3%);
         border-left: var(--StandortePickerEinzel-right-container-border-left, 1px solid grey);
+        flex: 1;
         flex: 1;
       }
 
@@ -136,10 +144,8 @@ export default class StandortePickerEinzel extends Shadow() {
           width: var(--StandortePickerEinzel-left-container-width, 100%);
         }
 
-        a-hotspot .content {
-          display: none !important;
       }
-      }
+    
     
     `
   }
