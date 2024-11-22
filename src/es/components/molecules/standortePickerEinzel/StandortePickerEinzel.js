@@ -1,20 +1,20 @@
 import { Shadow } from '../../web-components-toolbox/src/es/components/prototypes/Shadow.js'
 
 export default class StandortePickerEinzel extends Shadow() {
-  constructor (options = {}, ...args) {
+  constructor(options = {}, ...args) {
     super({ hoverInit: undefined, importMetaUrl: import.meta.url, ...options }, ...args)
     this.hotspots = this.root.querySelectorAll('a-hotspot')
     this.descriptions = this.root.querySelectorAll('.description')
     this.currentDescription = this.root.querySelector(".description[id='1']")
   }
 
-  connectedCallback () {
+  connectedCallback() {
     if (this.shouldRenderCSS()) this.renderCSS()
     this.setStartingDescription()
     document.body.addEventListener('click', this.setCurrentDescription)
   }
 
-  disconnectedCallback () {
+  disconnectedCallback() {
     document.body.removeEventListener('click', this.setCurrentDescription)
   }
 
@@ -39,21 +39,23 @@ export default class StandortePickerEinzel extends Shadow() {
     }
   }
 
-  setStartingDescription () {
+  setStartingDescription() {
     this.descriptions.forEach(desc => {
       if (desc.getAttribute('id') === 'default') {
-        this.currentDescription.classList.remove('active')
+        if (this.currentDescription) {
+          this.currentDescription.classList.remove('active')
+        }
         this.currentDescription = desc
         this.currentDescription.classList.add('active')
       }
     })
   }
 
-  shouldRenderCSS () {
+  shouldRenderCSS() {
     return !this.root.querySelector(`:host > style[_css], ${this.tagName} > style[_css]`)
   }
 
-  renderCSS () {
+  renderCSS() {
     this.css = /* css */`
       :host {
         width: var(--StandortePickerEinzel-width, 100%);
@@ -64,9 +66,14 @@ export default class StandortePickerEinzel extends Shadow() {
         margin: auto;
       }
 
+      :host m-image-hotspot {
+        margin: auto;
+      }
+
       .slide {
         display: var(--StandortePickerEinzel-display, flex);
         text-align: var(--StandortePickerEinzel-text-align, left);
+        align-items: stretch;
         align-items: stretch;
       }
 
@@ -95,11 +102,14 @@ export default class StandortePickerEinzel extends Shadow() {
         padding: var(--StandortePickerEinzel-left-container-padding, 2%);
         flex: 2.2;
         margin: auto;
+        flex: 2.2;
+        margin: auto;
       }
 
       .right-container {
         padding: var(--StandortePickerEinzel-right-container-padding, 3%);
         border-left: var(--StandortePickerEinzel-right-container-border-left, 1px solid grey);
+        flex: 1;
         flex: 1;
       }
 
@@ -135,6 +145,7 @@ export default class StandortePickerEinzel extends Shadow() {
         }
 
       }
+    
     
     `
   }
