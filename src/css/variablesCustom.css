@@ -1,114 +1,151 @@
 /**
-  * Variables naming rule: --{selector aka component aka namespace}-{css property}-{pseudo class or media query name} eg. --p-background-color-hover 
-  * NOTE: Within the component don't use any name spacing eg. component header don't use --header-default-color just use --color the namespace can be added by the Shadow as an html attribute
-  * - if a component holds other components or nodes you can declare or remap classes eg. :host > h1 {--color: var(--h1-color, white);}
-  * - if a component holds other components you should share the attribute namespace with its children
-  */
-/* font tracking */
-@import url("https://cdn.fonts.net/t/1.css?apiType=css&projectid=b2e5ea60-e0d9-11ec-b713-06e2001461d0");
+ * Variables naming rule: --{selector aka component aka namespace}-{css property}-{pseudo class or media query name} eg. --p-background-color-hover 
+ * NOTE: Within the component don't use any name spacing eg. component header don't use --header-default-color just use --color the namespace can be added by the Shadow as an html attribute
+ * - if a component holds other components or nodes you can declare or remap classes eg. :host > h1 {--color: var(--h1-color, white);}
+ * - if a component holds other components you should share the attribute namespace with its children
+ */
 
-/* custom alnatura fonts */
+/* 100 */
 @font-face {
-  font-family: 'JostRegular';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7myjJTVBNIg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: "Lexend-Thin";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Thin.woff2") format("woff2");
 }
 
+/* 200 */
 @font-face {
-  font-family: 'JostBold';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/jost/v15/92zPtBhPNqw79Ij1E865zBUv7myRJTVBNIg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* @font-face {
-  font-family: "KalamRegular";
-  src: url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap') format("Jost");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Lexend-ExtraLight";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-ExtraLight.woff2") format("woff2");
 }
 
+/* 300*/
 @font-face {
-  font-family: 'Helvetica Neue Condensed';
-  src: url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-} */
+  font-family: "Lexend-Light";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Light.woff2") format("woff2");
+}
+
+/* 400 */
+@font-face {
+  font-family: "Lexend-Regular";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Regular.woff2") format("woff2");
+}
+
+/* 500 */
+@font-face {
+  font-family: "Lexend-Medium";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Medium.woff2") format("woff2");
+}
+
+/* 600 */
+@font-face {
+  font-family: "Lexend-SemiBold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-SemiBold.woff2") format("woff2");
+}
+
+/* 700 */
+@font-face {
+  font-family: "Lexend-Bold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Bold.woff2") format("woff2");
+}
+
+/* 800 */
+@font-face {
+  font-family: "Lexend-ExtraBold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-ExtraBold.woff2") format("woff2");
+}
+
+/* 900 */
+@font-face {
+  font-family: "Lexend-Black";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Black.woff2") format("woff2");
+}
 
 :root {
-  --background-color: white;
+  /* -- custom colors */
+  --color-whit: #FFFFFF;
+  --color-spring-wood: #F5F3EC;
+  --color-black:#000000;
+  --color-silver-chalice:#A4A4A4;
+  --color-concrete:#F2F2F2;
+  --color-cod-gray:#121212;
+  --color-mine-shaft:#212121;
+  --color-dusty-gray:#949494;
+  /* standard toolbox */
+  --a-color: var(--color-dusty-gray);
+  --background-color: var(--color-white);
+  --background-secondary: var(--color-spring-wood);
+  --background-tertiary: var(--color-black);
   --bg-line-height: 1.5em;
-  --button-category-background-color-custom:var(--color-quaternary);
+  --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
-  --color-active: var(--color-tertiary);
-  --color-disabled: #A4A4A4;
-  --color-hover: var(--color-tertiary);
-  --color-secondary: #172546;
-  --color-tertiary: #e0b15c;
- --details-default-icon-right-a-text-decoration: none;
+  --button-primary-background-color-custom: var(--color-tertiary);
+  --color-active: var(--color);
+  --color-disabled: var(--color-silver-chalice);
+  --color-hover: var(--color);
+  --color-secondary: var(--color-cod-gray);
+  --color-tertiary: var(--color-mine-shaft);
+  --color: var(--color-cod-gray);
+  --content-spacing-mobile: 2rem;
+  --content-spacing: 1.7em;
+  --details-default-summary-child-color-custom: var(--color-mine-shaft);
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
   --download-color-custom: var(--color-tertiary);
-  --emotion-pictures-default-img-max-height: 50vh;
-  --emotion-pictures-with-button-img-max-height: var(--emotion-pictures-default-img-max-height);
-  --emotion-pictures-with-logo-img-max-height: var(--emotion-pictures-default-img-max-height);
-  --emotion-pictures-with-title-img-max-height: var(--emotion-pictures-default-img-max-height);
-  --font-family-bold: JostBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --font-family-secondary: JostRegular, Avenir35Light, sans-serif;
-  --font-family: JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
- --footer-default-text-decoration: none; 
- --footer-default-a-text-decoration: none;
- --footer-default-h4-color: var(--background-color);
+  --font-family-bold: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --font-family-secondary: Lexend-Regular, JostRegular, Avenir35Light, sans-serif;
+  --font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --footer-default-a-text-decoration: none;
   --footer-default-invert-a-color-hover-custom: var(--color-tertiary);
+  --footer-default-invert-background-color-custom: var(--background-secondary);
+  --footer-default-invert-color-custom: var(--color-tertiary);
   --footer-default-invert-color-hover-custom: var(--color-tertiary);
   --footer-default-invert-orange-a-color-hover-custom: var(--color-hover);
   --footer-default-invert-orange-background-color-custom: var(--color-tertiary);
   --footer-default-invert-svg-color-custom: var(--background-color);
   --footer-default-invert-svg-color-hover-custom: var(--color-tertiary);
+  --h-border-after-background-color: var(--color-tertiary);
+  --h-border-after-height: 3px;
+  --h-border-after-left: 50%;
+  --h-border-after-transform: -50%;
   --h-color: var(--color-secondary);
-  --h1-font-size: calc(1.3 * 1.75em);
-  --h6-font-family: var(--font-family-secondary);
-  --h6-font-size: var(--h2-font-size, 1.5em);
+  --h1-text-align: center;
+  --h1-font-size: 36px;
+  --h1-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h2-font-size: 32px;
+  --h2-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h3-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h3-font-size: 30px;
+  --h4-font-family: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h5-font-size: 20px;
+  --h5-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h6-font-size: 1em;
+  --h6-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-size: 16px;
+  --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
   --header-default-a-logo-top-mobile-custom: -0.5em;
   --header-default-a-menu-icon-background-color-custom: var(--color-secondary);
   --header-default-background-color-custom: var(--background-color);
   --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
   --header-default-logo-width-custom: min(9em, 138px);
+  --hr-border-bottom: 2px dotted var(--color-dusty-gray);
   --hr-border-bottom: 2px dotted var(--m-gray-600);
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
-  --language-switcher-default-content-width: var(--header-default-content-width);
-  --navigation-default-a-link-line-height-mobile: 1.5;
-  --navigation-default-a-link-line-height: 1.5;
-  /* --navigation-default-background-color: #ECECE8; */
+  --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
+  --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
+  --multi-level-navigation-delica-a-main-content-spacing: 1rem 0.8rem 0 0.8rem;
+  --nav-level-item-default-hover-background-color: var(--background-secondary);
   --navigation-default-color-custom: var(--color-secondary);
   --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
   --navigation-default-color-second-level-custom: var(--color);
-  --navigation-default-line-height-mobile: 1.5;
-  --news-alnatura-line-height-mobile:100%;
-  --news-alnatura-line-height:100%;
-  --picture-close-btn-background-color:var(--color-secondary);
-  --search-input-width-big:100%;
+  --picture-close-btn-background-color: var(--color-secondary);
+  --recipe-table-header-height: 3em;
+  --scroll-to-top-host-button-primary-border-radius: 0.5em;
+  --button-primary-color-hover-custom: var(--color-concrete);
+  --search-input-width-big: 100%;
+  --standorte-picker-color-active: var(--color);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  --title-border-display: none;
-  --h-border-after: true;
-  --h-border-after-background-color: var(--color-tertiary);
-  --h-border-after-height: 3px;
-  --h-border-after-left: 50%;
-  --h-border-after-transform: -50%;
-  --recipe-table-header-height: 3em;
-  --wrapper-text-flex-wrap: wrap;
-  --content-spacing: 1.7em;
-  --content-spacing-mobile: 2rem;
-  --hr-border-bottom: 2px dotted #949494;
   
 }
