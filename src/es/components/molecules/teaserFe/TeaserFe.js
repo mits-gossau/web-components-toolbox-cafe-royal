@@ -87,7 +87,7 @@ export default class TeaserFe extends Shadow() {
             position: relative;
             z-index: 1;
             text-shadow: 1px 3px 12px black;
-        }  
+        }
         
         .row {
             width: 100%;
@@ -127,7 +127,7 @@ export default class TeaserFe extends Shadow() {
 
         .image:hover .title{
             color: var(--TeaserFe-hover-title-color, rgb(214, 169, 88));
-
+            text-shadow: 1px 3px 12px white;
         }
         
         .image:hover a-picture {

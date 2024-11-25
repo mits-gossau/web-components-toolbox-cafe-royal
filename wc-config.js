@@ -224,6 +224,21 @@
       selector: 'd-a-',
       url: 'atoms/',
       separateFolder: true
+    },
+    {
+      selector: 'cr-o-',
+      url: 'organisms/',
+      separateFolder: true
+    },
+    {
+      selector: 'cr-m-',
+      url: 'molecules/',
+      separateFolder: true
+    },
+    {
+      selector: 'cr-a-',
+      url: 'atoms',
+      separateFolder: true
     }
   ] // directories
   // ↑↑↑ adjustable ↑↑↑

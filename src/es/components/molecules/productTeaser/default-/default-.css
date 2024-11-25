@@ -1,0 +1,32 @@
+:host {
+  --modal-default-close-btn-background-color: var(--color-secondary);
+  --modal-default-content-spacing-mobile: var(--content-spacing-mobile);
+  --modal-default-content-spacing: var(--content-spacing);
+  --modal-default-transition: opacity .3s;
+  --product-teaser-a-link-bottom: -1.625em;
+  --product-teaser-a-link-opacity: 0;
+  --product-teaser-a-link-position: absolute;
+  --product-teaser-a-link-transform-hover: translateY(0);
+  --product-teaser-a-link-transform: translateY(2.4em);
+  --product-teaser-a-link-transition: transform .35s ease .1s, opacity 0.3s ease-out;
+  --product-teaser-background-color: var(--product-teaser-background-color-custom, var(--background-color, var(--m-white)));
+  --product-teaser-figcaption-background-color: var(--product-teaser-figcaption-background-color-custom, var(--product-teaser-background-color));
+  --product-teaser-figcaption-bg-color-equal-padding: var(--product-teaser-figcaption-bg-color-equal-padding-custom, 0.625em 0 0);
+  --product-teaser-figcaption-padding: var(--product-teaser-figcaption-padding-custom, 0.625em 0.625em 0);
+  --product-teaser-figcaption-transform-hover: translateY(-2.4em);
+  --product-teaser-figcaption-transition: transform .45s cubic-bezier(.17,.67,.28,1) 50ms;
+  --product-teaser-h2-color: var(--color-secondary);
+  --product-teaser-h2-margin: 0 0 0.5em;
+  --product-teaser-overflow: hidden;
+  --product-teaser-p-font-size: 0.875em;
+  --product-teaser-p-line-height: var(--product-teaser-p-line-height-custom, 1.14em);
+  --product-teaser-p-margin: 0 0 0.625em;
+  --product-teaser-position: relative;
+  --underline-font-size: var(--product-teaser-p-font-size);
+}
+@media only screen and (max-width: _max-width_) {
+  :host {
+    --product-teaser-p-font-size: var(--p-font-size-mobile, var(--p-font-size, 1em));
+    --product-teaser-p-line-height: var(--p-line-height-mobile, var(--p-line-height, var(--line-height, normal)));
+  }
+}
