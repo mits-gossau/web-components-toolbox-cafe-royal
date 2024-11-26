@@ -61,7 +61,7 @@
 
 :root {
   /* -- custom colors */
-  --color-whit: #FFFFFF;
+  --color-white: #FFFFFF;
   --color-spring-wood: #F5F3EC;
   --color-black:#000000;
   --color-silver-chalice:#A4A4A4;
@@ -109,19 +109,18 @@
   --h-border-after-transform: -50%;
   --h-color: var(--color-secondary);
   --h1-text-align: center;
-  --h1-font-size: 36px;
   --h1-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --h2-font-size: 32px;
+  --h1-font-size: 36px;
   --h2-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h2-font-size: 32px;
   --h3-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h3-font-size: 30px;
   --h4-font-family: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --h5-font-size: 20px;
+  --h4-font-size: 20px;
   --h5-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --h6-font-size: 1em;
-  --h6-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --p-font-size: 16px;
+  --h5-font-size: 16px;
   --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-size: 16px;
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
   --header-default-a-logo-top-mobile-custom: -0.5em;
   --header-default-a-menu-icon-background-color-custom: var(--color-secondary);
@@ -148,5 +147,4 @@
   --standorte-picker-color-active: var(--color);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  
 }
