@@ -88,6 +88,15 @@ export default class EmotionCarousel extends Shadow() {
       height:38vw;
       margin: 0; 
       --svg-size: 2em;
+      
+    }
+
+    :host h2{
+      font-size: var(--h1-font-size, 36px);
+    }
+
+    :host .controls{
+      font-size: 1.2em;
     }
 
     .component-container {
@@ -99,6 +108,8 @@ export default class EmotionCarousel extends Shadow() {
       position: relative;
       z-index: 2;
     }
+
+
 
         .slide {
           width: 100%;
@@ -146,7 +157,6 @@ export default class EmotionCarousel extends Shadow() {
             justify-content: center;
             flex-direction: column;
             position: absolute;
-            font-size: small;
             left: 30%;
             z-index: 4;
             max-width: 36%;
@@ -179,7 +189,7 @@ export default class EmotionCarousel extends Shadow() {
             justify-content: flex-end;
           }
           .section:hover{
-            --color: var(--color-tertiary);
+            --color: var(--color-dusty-gray, var(--color-tertiary));
           }
 
           .link-description {
