@@ -81,6 +81,7 @@
   --color-active: var(--color);
   --color-disabled: var(--color-silver-chalice);
   --color-hover: var(--color);
+  --color-quaternary: var(--color-concrete);
   --color-secondary: var(--color-cod-gray);
   --color-tertiary: var(--color-mine-shaft);
   --color: var(--color-cod-gray);
@@ -142,6 +143,7 @@
   --picture-close-btn-background-color: var(--color-secondary);
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
+  --sustainability-metrics-text-color-secondary: var(--color-white);
   --button-primary-color-hover-custom: var(--color-concrete);
   --search-input-width-big: 100%;
   --standorte-picker-color-active: var(--color);
