@@ -86,6 +86,7 @@ export default class EmotionCarousel extends Shadow() {
       align-items: center;
       flex-direction: column;
       height:38vw;
+      max-height: var(--emotion-carousel-img-max-height, none);
       margin: 0; 
       --svg-size: 2em;
     }

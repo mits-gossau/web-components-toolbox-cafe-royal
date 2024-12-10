@@ -95,6 +95,7 @@
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
   --download-color-custom: var(--color-tertiary);
+  --emotion-carousel-img-max-height: 65vh;
   --font-family-bold: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --font-family-secondary: Lexend-Regular, JostRegular, Avenir35Light, sans-serif;
   --font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
