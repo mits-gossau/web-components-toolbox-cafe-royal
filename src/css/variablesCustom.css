@@ -76,8 +76,6 @@
   --background-secondary: var(--color-spring-wood);
   --background-tertiary: var(--color-black);
   --bg-line-height: 1.5em;
-  --border-radius: 12px;
-  --border-radius-mobile: var(--border-radius); /* Diese Werte ändern nicht nur den border-radius von bildern, sondern auch von Button oder teasern. besser wäre wahrscheinlich, wenn in Picture.js eine weitere variable wäre, die nur den border-radius der bilder definiert (z.B. --img-border-radius und --img-border-radius-mobile) */
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
@@ -109,11 +107,7 @@
   --footer-default-invert-orange-background-color-custom: var(--color-white);
   --footer-default-invert-svg-color-custom: var(--background-tertiary);
   --footer-default-invert-svg-color-hover-custom: var(--color-white);
-  --h-border-after-background-color: var(--color-tertiary);
-  --h-border-after-height: 3px;
-  --h-border-after-left: 50%;
-  --h-border-after: true;
-  --h-border-after-transform: -50%;
+  --h-border-after: false;
   --h-color: var(--color-secondary);
   --h1-text-align: center;
   --h1-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
@@ -140,7 +134,6 @@
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
   --img-border-radius: 12px;
-  --img-border-radius-mobile: var(--img-border-radius); /* diese zwei Variablen gibt es in der toolbox momentan nicht */
   --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
   --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
   --multi-level-navigation-delica-a-main-content-spacing: 1rem 0.8rem 0 0.8rem;
@@ -149,6 +142,8 @@
   --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
   --navigation-default-color-second-level-custom: var(--color);
   --picture-close-btn-background-color: var(--color-secondary);
+  --picture-cover-border-radius: var(--img-border-radius);
+  --picture-hotspot-border-radius: var(--img-border-radius);
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
   --sustainability-metrics-text-color-secondary: var(--color-white);

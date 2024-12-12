@@ -4,7 +4,6 @@ export default class SustainabilityMetrics extends Shadow() {
   constructor(options = {}, ...args) {
     super({ hoverInit: undefined, importMetaUrl: import.meta.url, ...options }, ...args)
     this.backgroundPicture = this.root.querySelector('.background')
-    console.log("this.backgroundPicture: ", this.backgroundPicture)
     this.backgroundOverlay = this.root.querySelector('.background-overlay')
     this.numbersContainer = this.root.querySelectorAll('.numbers > *')
 
@@ -13,7 +12,6 @@ export default class SustainabilityMetrics extends Shadow() {
   connectedCallback() {
     if (this.shouldRenderCSS()) this.renderCSS()
     if (this.getAttribute('defaultSource')) {
-      console.log(this.numbersContainer.length)
       const currentDefaultSource = this.getAttribute('defaultSource')
       this.backgroundPicture.setAttribute('defaultSource', currentDefaultSource)
       this.backgroundPicture.style = `background-image: url(${currentDefaultSource}); background-size: cover; background-position: center;`
