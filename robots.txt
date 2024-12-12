@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow:/
+Disallow:/umbraco
+Sitemap: https://www.cafe-royal.com/sitemap
