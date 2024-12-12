@@ -71,7 +71,6 @@
   --color-dusty-gray:#949494;
   /* standard toolbox */
   --a-color: var(--color-dusty-gray);
-  --arrow-nav-color-hover: var(--color-silver-chalice); /* diese Variable gibt es in der toolbox momentan nicht */
   --background-color: var(--color-white);
   --background-secondary: var(--color-spring-wood);
   --background-tertiary: var(--color-black);
@@ -79,10 +78,12 @@
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
-  --carousel-two-default-nav-color-hover: var(--color-silver-chalice); /* diese Variable gibt es in der toolbox momentan nicht */
+  --carousel-two-default-nav-height: 0.6em;
+  --carousel-two-default-nav-width: 0.6em;
+  --carousel-two-default-svg-size: 1em;
   --color-active: var(--color);
   --color-disabled: var(--color-silver-chalice);
-  --color-hover: var(--color); /* wenn das hier "--color-silver-chalice" ist (anstelle von --color), ändern sich nicht nur die pfeile von galeriekomponente, sondern auch andere hover effekte. besser wäre wahrscheinlich, wenn im .js eine weitere variable wäre, die nur den hover-effekt der galeriekomponente definiert (z.B. --carousel-two-default-nav-color-hover, oder --arrow-nav-color-hover) */
+  --color-hover: var(--color); 
   --color-quaternary: var(--color-concrete);
   --color-secondary: var(--color-cod-gray);
   --color-tertiary: var(--color-mine-shaft);
