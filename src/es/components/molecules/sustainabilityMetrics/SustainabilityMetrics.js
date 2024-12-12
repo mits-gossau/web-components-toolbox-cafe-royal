@@ -12,12 +12,12 @@ export default class SustainabilityMetrics extends Shadow() {
   connectedCallback() {
     if (this.shouldRenderCSS()) this.renderCSS()
     if (this.getAttribute('defaultSource')) {
-      console.log(this.numbersContainer.length)
       const currentDefaultSource = this.getAttribute('defaultSource')
       this.backgroundPicture.setAttribute('defaultSource', currentDefaultSource)
       this.backgroundPicture.style = `background-image: url(${currentDefaultSource}); background-size: cover; background-position: center;`
       this.backgroundOverlay.style.display = 'block'
       this.style = 'color: white;'
+      this.backgroundPicture.classList.add("background-image")
     }
   }
 
@@ -46,6 +46,12 @@ export default class SustainabilityMetrics extends Shadow() {
         width: var(--sustainability-metrics-background-width, 100%);
         position: var(--sustainability-metrics-background-position, absolute);
         z-index: var(--sustainability-metrics-background-z-index, 1);
+    }
+    :host .background-image + div.numbers > div.number > h1{
+      color: var(--sustainability-metrics-h1-color-secondary, var(--sustainability-metrics-text-color-secondary, var(--color-quaternary, white)))
+    }
+    :host .background-image + div.numbers > div.number > p{
+      color: var(--sustainability-metrics-p-color-secondary, var(--sustainability-metrics-text-color-secondary, var(--color-tertiary, white)))
     }
 
     .background-overlay {

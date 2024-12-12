@@ -61,7 +61,7 @@
 
 :root {
   /* -- custom colors */
-  --color-whit: #FFFFFF;
+  --color-white: #FFFFFF;
   --color-spring-wood: #F5F3EC;
   --color-black:#000000;
   --color-silver-chalice:#A4A4A4;
@@ -78,10 +78,14 @@
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
+  --carousel-two-default-nav-height: 0.6em;
+  --carousel-two-default-nav-width: 0.6em;
+  --carousel-two-default-svg-size: 1em;
   --button-primary-color-hover-custom: var(--color-concrete);
   --color-active: var(--color);
   --color-disabled: var(--color-silver-chalice);
-  --color-hover: var(--color);
+  --color-hover: var(--color); 
+  --color-quaternary: var(--color-concrete);
   --color-secondary: var(--color-cod-gray);
   --color-tertiary: var(--color-mine-shaft);
   --color: var(--color-cod-gray);
@@ -91,34 +95,35 @@
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
   --download-color-custom: var(--color-tertiary);
+  --emotion-carousel-img-max-height: 65vh;
   --font-family-bold: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --font-family-secondary: Lexend-Regular, JostRegular, Avenir35Light, sans-serif;
   --font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
   --footer-default-a-text-decoration: none;
-  --footer-default-invert-a-color-hover-custom: var(--color-tertiary);
-  --footer-default-invert-background-color-custom: var(--background-secondary);
-  --footer-default-invert-color-custom: var(--color-tertiary);
-  --footer-default-invert-color-hover-custom: var(--color-tertiary);
-  --footer-default-invert-orange-a-color-hover-custom: var(--color-hover);
-  --footer-default-invert-orange-background-color-custom: var(--color-tertiary);
-  --footer-default-invert-svg-color-custom: var(--background-color);
-  --footer-default-invert-svg-color-hover-custom: var(--color-tertiary);
-  --h-border-after-background-color: var(--color-tertiary);
-  --h-border-after-height: 3px;
-  --h-border-after-left: 50%;
-  --h-border-after-transform: -50%;
-  --h-border-after: true;
+  --footer-default-h-color: var(--color-white);
+  --footer-default-invert-a-color-hover-custom: var(--color-white);
+  --footer-default-invert-background-color-custom: var(--background-tertiary);
+  --footer-default-invert-color-custom: var(--color-white);
+  --footer-default-invert-color-hover-custom: var(--color-white);
+  --footer-default-invert-orange-a-color-hover-custom: var(--color-white);
+  --footer-default-invert-orange-background-color-custom: var(--color-white);
+  --footer-default-invert-svg-color-custom: var(--background-tertiary);
+  --footer-default-invert-svg-color-hover-custom: var(--color-white);
+  --h-border-after: false;
   --h-color: var(--color-secondary);
+  --h1-text-align: center;
   --h1-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h1-font-size: 36px;
-  --h1-text-align: center;
   --h2-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h2-font-size: 32px;
   --h3-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h3-font-size: 30px;
   --h4-font-family: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h4-font-size: 20px;
   --h5-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --h5-font-size: 20px;
+  --h5-font-size: 16px;
+  --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-size: 16px;
   --h6-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h6-font-size: 1em;
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
@@ -132,6 +137,7 @@
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
+  --img-border-radius: 12px;
   --language-switcher-delica-content-spacing-custom: .5em;
   --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
   --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
@@ -143,11 +149,14 @@
   --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --p-font-size: 16px;
   --picture-close-btn-background-color: var(--color-secondary);
+  --picture-cover-border-radius: var(--img-border-radius);
+  --picture-hotspot-border-radius: var(--img-border-radius);
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
+  --sustainability-metrics-text-color-secondary: var(--color-white);
+  --button-primary-color-hover-custom: var(--color-concrete);
   --search-input-width-big: 100%;
   --standorte-picker-color-active: var(--color);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  
 }
