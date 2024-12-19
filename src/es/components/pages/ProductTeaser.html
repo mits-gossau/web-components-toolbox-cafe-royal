@@ -1,0 +1,190 @@
+<style>
+  .cr-m-product-teaser {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, .07);
+    border-radius: 12px;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 1.7em;
+  }
+  figure > m-carousel-two > section {
+    margin-top: 0px;
+  }
+  figure > img, figure > m-carousel-two > section > img {
+    object-fit: contain;
+    height: 290px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  a-arrow a {
+    color: #949494;
+  }
+  a-arrow a:hover {
+    color: #121212;
+  }
+  figure > .imitate-nav-points, figure > m-carousel-two > nav {
+    height: 10px;
+    padding: 1.7em;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  figcaption > span {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  figcaption > span > h2 {
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+  figcaption > span > img {
+    height: 32px;
+    width: auto;
+  }
+  figcaption > p {
+    text-align: center;
+    margin-top: 1.7em
+  }
+  figcaption > button {
+    cursor: pointer;
+    color: #f2f2f2;
+    background-color: #121212;
+    font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 24px;
+    border: 0px solid;
+    border-radius: 8px;
+  }
+  figcaption > button:hover {
+    color: #121212;
+    background-color: #f2f2f2;
+  }
+</style>
+
+<div style="background-color: #f2f2f2; padding: 10px;">
+  <h1>Ohne Links</h1>
+  <h2>ein Element</h2>
+
+
+  <h2>vier Elemente</h2>
+
+
+  <br>
+  <hr>
+  <br>
+
+  <h1>Ein Link</h1>
+  <h2>ein Element</h2>
+
+
+  <h2>zwei Elemente</h2>
+  <o-wrapper namespace="wrapper-teaser-" simulate-children="3">
+    <div class="cr-m-product-teaser" style="background-color: white; border: 2px solid rgba(0, 0, 0, .07); border-radius: 12px;">
+      <figure
+        style="display: flex; flex-direction: column; background-size: contain; background-repeat: no-repeat; padding-top: 1.7em;">
+        <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/kaffee.png" 
+          alt="kafi"></img>
+        <div class="imitate-nav-points" style="height: 10px; padding: 1.7em;"></div>
+        <figcaption style="display: flex; flex-direction: column; align-items: center;">
+          <span style="display: flex; flex-wrap: nowrap; align-items: center;">
+            <h2 style="margin-bottom: 0px; margin-right: 10px;">Lungo 10</h2>
+            <img src="./img/Kapsel.svg" alt="Kapsel" style="height: 32px; width: auto;"></img>
+          </span>
+          <p style="text-align: center; margin-top: 1.7em">Harmonisch & Caramelnoten<br /><strong>Intensity 5</strong>
+          </p>
+          <button type="button"
+            style="cursor: pointer; color: #f2f2f2; background-color: #121212; font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 12px 24px; border: 0px solid; border-radius: 8px;">Wo
+            kaufen</button>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="cr-m-product-teaser" style="background-color: white; border: 2px solid rgba(0, 0, 0, .07); border-radius: 12px;">
+      <figure
+        style="display: flex; flex-direction: column; background-size: contain; background-repeat: no-repeat; padding-top: 1.7em;">
+        <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/kaffee.png" 
+          alt="kafi"></img>
+        <div class="imitate-nav-points" style="height: 10px; padding: 1.7em;"></div>
+        <figcaption style="display: flex; flex-direction: column; align-items: center;">
+          <span style="display: flex; flex-wrap: nowrap; align-items: center;">
+            <h2 style="margin-bottom: 0px; margin-right: 10px;">Lungo 10</h2>
+            <img src="./img/Kapsel.svg" alt="Kapsel" style="height: 32px; width: auto;"></img>
+          </span>
+          <p style="text-align: center; margin-top: 1.7em">Harmonisch & Caramelnoten<br /><strong>Intensity 5</strong>
+          </p>
+          <button type="button"
+            style="cursor: pointer; color: #f2f2f2; background-color: #121212; font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 12px 24px; border: 0px solid; border-radius: 8px;">Wo
+            kaufen</button>
+        </figcaption>
+      </figure>
+    </div>
+  </o-wrapper>
+
+  <br>
+  <hr>
+  <br>
+
+  <o-wrapper namespace="wrapper-teaser-" simulate-children="3">
+    <div class="cr-m-product-teaser" style="background-color: white; border: 2px solid rgba(0, 0, 0, .07); border-radius: 12px;">
+      <figure style="display: flex; flex-direction: column; background-size: contain; background-repeat: no-repeat;">
+        <m-carousel-two history active=11 namespace=carousel-two-default- nav-align-self="end" nav-separate>
+          <section>
+            <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/kaffee.png" 
+            alt="kafi"></img>
+            <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/Glace_002.jpg" 
+            alt="Glace"></img>
+          </section>
+        </m-carousel-two>
+        <figcaption
+          style="display: flex; flex-direction: column; align-items: center;">
+          <span style="display: flex; flex-wrap: nowrap; align-items: center;">
+            <h2 style="margin-bottom: 0px; margin-right: 10px;">Lungo 10</h2>
+            <img src="./img/Kapsel.svg" alt="Kapsel" style="height: 32px; width: auto;"></img>
+          </span>
+          <p style="text-align: center; margin-top: 1.7em">Harmonisch & Caramelnoten<br /><strong>Intensity 5</strong>
+          </p>
+          <button type="button"
+            style="cursor: pointer; color: #f2f2f2; background-color: #121212; font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 12px 24px; border: 0px solid; border-radius: 8px;">Wo
+            kaufen</button>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="cr-m-product-teaser" style="background-color: white; border: 2px solid rgba(0, 0, 0, .07); border-radius: 12px;">
+      <figure
+        style="display: flex; flex-direction: column; background-size: contain; background-repeat: no-repeat; padding-top: 1.7em;">
+        <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/kaffee.png" 
+          alt="kafi"></img>
+        <div class="imitate-nav-points" style="height: 10px; padding: 1.7em;"></div>
+        <figcaption style="display: flex; flex-direction: column; align-items: center;">
+          <span style="display: flex; flex-wrap: nowrap; align-items: center;">
+            <h2 style="margin-bottom: 0px; margin-right: 10px;">Lungo 10</h2>
+            <img src="./img/Kapsel.svg" alt="Kapsel" style="height: 32px; width: auto;"></img>
+          </span>
+          <p style="text-align: center; margin-top: 1.7em">Harmonisch & Caramelnoten<br /><strong>Intensity 5</strong>
+          </p>
+          <button type="button"
+            style="cursor: pointer; color: #f2f2f2; background-color: #121212; font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 12px 24px; border: 0px solid; border-radius: 8px;">Wo
+            kaufen</button>
+        </figcaption>
+      </figure>
+    </div>
+  </o-wrapper>
+
+  <br>
+  <hr>
+  <br>
+
+  <h1>2-3 Links</h1>
+  <h2>ein Element</h2>
+
+
+  <h2>fünf Elemente</h2>
+</div>
