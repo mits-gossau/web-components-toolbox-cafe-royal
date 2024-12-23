@@ -170,4 +170,5 @@
   --sustainability-metrics-text-color-secondary: var(--color-white);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
+  --picture-teaser-img-object-fit: cover;
 }
