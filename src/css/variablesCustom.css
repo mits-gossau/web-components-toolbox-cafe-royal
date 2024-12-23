@@ -94,6 +94,8 @@
   --color: var(--color-cod-gray);
   --content-spacing-mobile: 2rem;
   --content-spacing: 1.7em;
+  --details-default-icon-right-h4-color: var(--color-white);
+  --details-default-icon-right-summary-border-bottom-open-custom: 1px dotted var(--color-white);
   --details-default-summary-child-color-custom: var(--color-mine-shaft);
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
