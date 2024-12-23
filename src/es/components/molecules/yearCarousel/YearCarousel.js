@@ -117,7 +117,7 @@ export default class YearCarousel extends Shadow() {
             width: 100%;
             position: relative;
             overflow: hidden;
-            background: rgb(207 207 207);
+            background: var(--carousel-container-background, rgb(207 207 207));
             border-radius: 0.5em;
           }
           
