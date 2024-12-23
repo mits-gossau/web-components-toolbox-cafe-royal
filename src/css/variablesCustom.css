@@ -159,6 +159,8 @@
   --picture-close-btn-background-color: var(--color-secondary);
   --picture-cover-border-radius: var(--img-border-radius);
   --picture-hotspot-border-radius: var(--img-border-radius);
+  --picture-scale-up-border-radius: 0.75em;
+  --picture-teaser-border-radius: 0.75em;
   --recipe-table-background-tint: var(--color-spring-wood);
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
