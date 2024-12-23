@@ -104,6 +104,8 @@
   --font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
   --footer-default-a-text-decoration: none;
   --footer-default-h-color: var(--color-white);
+  --footer-default-hr-border-bottom: 1px solid white !important;
+  --footer-default-hr-opacity: 1;
   --footer-default-invert-a-color-hover-custom: var(--color-white);
   --footer-default-invert-background-color-custom: var(--background-tertiary);
   --footer-default-invert-color-custom: var(--color-white);
@@ -140,11 +142,10 @@
   --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
   --header-default-logo-width-custom: min(9em, 138px);
   --hr-border-bottom: 2px dotted var(--color-cod-gray);
-  --footer-default-hr-opacity: 1;
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
-  --img-border-radius: 12px;
+  --img-border-radius: 0.75em;
   --language-switcher-delica-content-spacing-custom: .5em;
   --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
   --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
@@ -154,20 +155,17 @@
   --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
   --navigation-default-color-second-level-custom: var(--color);
   --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --p-font-size: 16px;
   --p-font-size: 16px;
   --picture-close-btn-background-color: var(--color-secondary);
   --picture-cover-border-radius: var(--img-border-radius);
   --picture-hotspot-border-radius: var(--img-border-radius);
-  --recipe-table-header-height: 3em;
   --recipe-table-background-tint: var(--color-spring-wood);
+  --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
+  --search-input-background-color: var(--color-spring-wood);
   --search-input-width-big: 100%;
-  --search-input-background-color: #f5f3ec;
   --standorte-picker-color-active: var(--color);
   --sustainability-metrics-text-color-secondary: var(--color-white);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  --footer-default-hr-border-bottom: 1px solid white !important;
 }
