@@ -215,9 +215,13 @@ export default class EmotionCarousel extends Shadow() {
       @media only screen and (max-width: 767px) {
         :host {
           --content-spacing-mobile: none;
-          height:20vh;
+          height:40vh;
           --content-width: 100%;
+          --img-height-mobile: 100%;
 
+        }
+        :host h2{
+          font-size: large;
         }
         .title{
           width: 100%
