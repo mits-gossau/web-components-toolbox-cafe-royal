@@ -81,7 +81,8 @@
   --button-primary-background-color-custom: var(--color-tertiary);
   --button-primary-color-hover-custom: var(--color-concrete);
   --button-primary-color-hover-custom: var(--color-concrete);
-  --carousel-container-background: red;
+  --carousel-container-background: var(--color-spring-wood);
+  --carousel-two-default-background-color: var(--color-spring-wood);
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
@@ -94,6 +95,8 @@
   --color: var(--color-cod-gray);
   --content-spacing-mobile: 2rem;
   --content-spacing: 1.7em;
+  --default-h5-margin: 0 0 0.5em;
+  --default-p-font-size: 0.875em;
   --details-default-icon-right-h4-color: var(--color-white);
   --details-default-icon-right-summary-border-bottom-open-custom: 1px dotted var(--color-white);
   --details-default-summary-child-color-custom: var(--color-mine-shaft);
@@ -143,6 +146,7 @@
   --header-default-background-color-custom: var(--background-color);
   --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
   --header-default-logo-width-custom: min(9em, 138px);
+  --headshot-picture-border-radius: var(--img-border-radius);
   --hr-border-bottom: 2px dotted var(--color-cod-gray);
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
@@ -158,11 +162,13 @@
   --navigation-default-color-second-level-custom: var(--color);
   --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --p-font-size: 16px;
+  --picture-border-radius: var(--img-border-radius);
   --picture-close-btn-background-color: var(--color-secondary);
   --picture-cover-border-radius: var(--img-border-radius);
   --picture-hotspot-border-radius: var(--img-border-radius);
   --picture-scale-up-border-radius: 0.75em;
   --picture-teaser-border-radius: 0.75em;
+  --picture-teaser-img-object-fit: cover;
   --recipe-table-background-tint: var(--color-spring-wood);
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
@@ -172,5 +178,4 @@
   --sustainability-metrics-text-color-secondary: var(--color-white);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  --picture-teaser-img-object-fit: cover;
 }
