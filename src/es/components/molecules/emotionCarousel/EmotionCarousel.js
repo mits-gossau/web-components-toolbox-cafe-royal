@@ -75,6 +75,7 @@ export default class EmotionCarousel extends Shadow() {
     this.css = /* css */`
 
     :host {
+      font-family: var(--h2-font-family, 'Arial');
       text-shadow: 1px 3px 18px black;
       --img-height: 100%;
       --picture-cover-img-max-height: none;
