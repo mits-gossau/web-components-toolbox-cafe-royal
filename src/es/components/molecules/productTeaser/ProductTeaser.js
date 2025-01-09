@@ -23,24 +23,23 @@ export default class CrProductTeaser extends Teaser {
     this.css = /* css */ `
       :host {
         display: block;
-        /* min-width: 350px;
-        max-width: calc(100% / 3); */
       }
       :host div {
         background-color: white;
-        border: 2px solid rgba(0, 0, 0, .07);
-        border-radius: 12px;
+        border: 0.125em solid rgba(0, 0, 0, .07);
+        border-radius: 0.75em;
       }
       :host figure {
         display: flex;
         flex-direction: column;
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 40px;
+        margin: 2.5em;
       }
-      :host figure > img {
+      :host figure > img, :host figure > m-carousel-two > section > img {
         object-fit: contain;
         height: 11vw;
+        min-height: 15em;
         width: auto;
         background-size: contain;
         background-repeat: no-repeat;
@@ -56,11 +55,12 @@ export default class CrProductTeaser extends Teaser {
         align-items: center;
       }
       :host figcaption > span > h2 {
-        margin-bottom: 0px;
-        margin-right: 10px;
+        margin-bottom: 0;
+        margin-right: 0.625em;
+        font-size: 2em;
       }
       :host figcaption > span > img {
-        height: 32px;
+        height: 2em;
         width: auto;
       }
       :host figcaption > p {
@@ -72,11 +72,11 @@ export default class CrProductTeaser extends Teaser {
         color: #f2f2f2;
         background-color: #121212;
         font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 16px;
+        font-size: 1em;
         text-align: center;
-        padding: 12px 24px;
-        border: 0px solid;
-        border-radius: 8px;
+        padding: 0.75em 1.5em;
+        border: 0 solid;
+        border-radius: 0.5em;
       }
       @media only screen and (max-width: _max-width_) {
         
@@ -115,21 +115,7 @@ export default class CrProductTeaser extends Teaser {
       },
     ]);
     Promise.all([fetchModules]).then((_) => {
-      this.html = /* html */ `
-        <div>
-          <figure>
-            <img namespace="picture-teaser-" picture-load src="./../../../../../src/es/components/molecules/productTeaser/img/kaffee.png" alt="kafi" />
-            <figcaption>
-              <span>
-                <h2>Lungo 10</h2>
-                <img src="./../../../../../src/es/components/molecules/productTeaser/img/Kapsel.svg" alt="Kapsel" />
-              </span>
-              <p>Harmonisch & Caramelnoten<br /><strong>Intensity 5</strong></p>
-              <button type="button">Wo kaufen</button>
-            </figcaption>
-          </figure>
-        </div>
-      `;
+      
     });
   }
 }
