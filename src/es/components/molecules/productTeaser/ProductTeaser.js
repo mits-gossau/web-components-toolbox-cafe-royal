@@ -23,7 +23,8 @@ export default class CrProductTeaser extends Teaser {
     this.css = /* css */ `
       :host {
         display: block;
-        min-width: 350px;
+        /* min-width: 350px;
+        max-width: calc(100% / 3); */
       }
       :host div {
         background-color: white;
