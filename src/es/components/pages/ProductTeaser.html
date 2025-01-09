@@ -1,4 +1,50 @@
 <style>
+  o-wrapper {
+    display: flex;
+  }
+</style>
+
+<o-wrapper namespace="wrapper-teaser-">
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+  <cr-m-product-teaser></cr-m-product-teaser>
+</o-wrapper>
+
+<div class="cr-m-product-teaser" style="background-color: white; border: 2px solid rgba(0, 0, 0, .07); border-radius: 12px;">
+  <figure style="display: flex; flex-direction: column; background-size: contain; background-repeat: no-repeat;">
+    <m-carousel-two history active=11 namespace=carousel-two-default- nav-align-self="end" nav-separate>
+      <section>
+        <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/kaffee.png" 
+        alt="kafi"></img>
+        <img style="object-fit: contain; height: 290px; width: auto; background-size: contain; background-repeat: no-repeat;" namespace="picture-teaser-" picture-load src="./img/Glace_002.jpg" 
+        alt="Glace"></img>
+      </section>
+    </m-carousel-two>
+    <figcaption
+      style="display: flex; flex-direction: column; align-items: center;">
+      <span style="display: flex; flex-wrap: nowrap; align-items: center;">
+        <h2 style="margin-bottom: 0px; margin-right: 10px;">Lungo 10</h2>
+        <img src="./img/Kapsel.svg" alt="Kapsel" style="height: 32px; width: auto;"></img>
+      </span>
+      <p style="text-align: center; margin-top: 1.7em">Harmonisch & Caramelnoten<br /><strong>Intensity 5</strong>
+      </p>
+      <button type="button"
+        style="cursor: pointer; color: #f2f2f2; background-color: #121212; font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 16px; text-align: center; padding: 12px 24px; border: 0px solid; border-radius: 8px;">Wo
+        kaufen</button>
+    </figcaption>
+  </figure>
+</div>
+
+<style>
   .cr-m-product-teaser {
     background-color: white;
     border: 2px solid rgba(0, 0, 0, .07);
@@ -44,9 +90,10 @@
   figcaption > span > h2 {
     margin-bottom: 0px;
     margin-right: 10px;
+    font-size: 2em;
   }
   figcaption > span > img {
-    height: 32px;
+    height: 2em;
     width: auto;
   }
   figcaption > p {
