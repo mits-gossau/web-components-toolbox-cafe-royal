@@ -98,7 +98,7 @@
   --default-h5-margin: 0 0 0.5em;
   --default-p-font-size: 0.875em;
   --details-default-icon-right-h4-color: var(--color-white);
-  --details-default-icon-right-summary-border-bottom-open-custom: 1px dotted var(--color-white);
+  --details-default-icon-right-summary-border-bottom-open-custom: 1px solid var(--color-white);
   --details-default-summary-child-color-custom: var(--color-mine-shaft);
   --details-default-svg-color-custom: var(--color-tertiary);
   --download-box-shadow-color-custom: var(--download-color-custom);
@@ -147,7 +147,7 @@
   --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
   --header-default-logo-width-custom: min(9em, 138px);
   --headshot-picture-border-radius: var(--img-border-radius);
-  --hr-border-bottom: 2px dotted var(--color-cod-gray);
+  --hr-border-bottom: 1px solid var(--color-cod-gray);
   --hr-border-width: 0 0 2px;
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
