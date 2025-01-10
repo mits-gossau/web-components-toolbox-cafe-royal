@@ -168,6 +168,12 @@
   --picture-hotspot-border-radius: var(--img-border-radius);
   --picture-scale-up-border-radius: 0.75em;
   --picture-teaser-border-radius: 0.75em;
+  --picture-border-radius-mobile: var(--img-border-radius);
+  --picture-close-btn-background-color-mobile: var(--color-secondary);
+  --picture-cover-border-radius-mobile: var(--img-border-radius);
+  --picture-hotspot-border-radius-mobile: var(--img-border-radius);
+  --picture-scale-up-border-radius-mobile: 0.75em;
+  --picture-teaser-border-radius-mobile: 0.75em;
   --picture-teaser-img-object-fit: cover;
   --recipe-table-background-tint: var(--color-spring-wood);
   --recipe-table-header-height: 3em;
