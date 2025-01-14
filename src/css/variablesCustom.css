@@ -78,6 +78,7 @@
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
+  --carousel-two-defaultarrow-nav-size-small: 1.5em;
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
