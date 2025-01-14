@@ -166,7 +166,7 @@
   --navigation-default-color-custom: var(--color-secondary);
   --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
   --navigation-default-color-second-level-custom: var(--color);
-  --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-family: Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --p-font-size: 16px;
   --picture-border-radius: var(--img-border-radius);
   --picture-close-btn-background-color: var(--color-secondary);
