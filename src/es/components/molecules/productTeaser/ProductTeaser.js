@@ -67,17 +67,6 @@ export default class CrProductTeaser extends Teaser {
         text-align: center;
         margin-top: 1.7em
       }
-      :host figcaption > button {
-        cursor: pointer;
-        color: #f2f2f2;
-        background-color: #121212;
-        font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 1em;
-        text-align: center;
-        padding: 0.75em 1.5em;
-        border: 0 solid;
-        border-radius: 0.5em;
-      }
       @media only screen and (max-width: _max-width_) {
         
       }

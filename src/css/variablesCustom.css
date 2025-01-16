@@ -78,11 +78,12 @@
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
+  --button-primary-background-color-hover-custom: var(--color-quaternary);
   --carousel-two-defaultarrow-nav-size-small: 1.5em;
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
-  --button-primary-color-hover-custom: var(--color-concrete);
+  --button-primary-color-hover-custom: var(--color-cod-gray);
   --color-active: var(--color);
   --color-disabled: var(--color-silver-chalice);
   --color-hover: var(--color); 
@@ -155,7 +156,6 @@
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
   --sustainability-metrics-text-color-secondary: var(--color-white);
-  --button-primary-color-hover-custom: var(--color-concrete);
   --search-input-width-big: 100%;
   --standorte-picker-color-active: var(--color);
   --teaser-round-figcaption-color: var(--color-secondary);
