@@ -48,6 +48,7 @@ export default class CrProductTeaser extends Teaser {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 2.5em;
       }
       :host figcaption > span {
         display: flex;
