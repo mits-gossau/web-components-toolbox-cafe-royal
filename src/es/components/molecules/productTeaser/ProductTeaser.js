@@ -36,7 +36,7 @@ export default class CrProductTeaser extends Teaser {
         background-repeat: no-repeat;
         margin: 2.5em;
       }
-      :host figure > img, :host figure > m-carousel-two > section > img {
+      :host figure > a-picture, :host figure > m-carousel-two > section > a-picture {
         object-fit: contain;
         height: 11vw;
         min-height: 15em;
@@ -59,7 +59,7 @@ export default class CrProductTeaser extends Teaser {
         margin-right: 0.625em;
         font-size: 2em;
       }
-      :host figcaption > span > img {
+      :host figcaption > span > a-picture {
         height: 2em;
         width: auto;
       }
