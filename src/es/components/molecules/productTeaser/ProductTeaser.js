@@ -36,7 +36,10 @@ export default class CrProductTeaser extends Teaser {
         background-repeat: no-repeat;
         margin: 2.5em;
       }
-      :host figure > a-picture, :host figure > m-carousel-two > section > a-picture {
+      :host figure > div {
+        border: none;
+      }
+      :host figure > div > a-picture, :host figure > div > m-carousel-two > section > a-picture {
         object-fit: contain;
         height: 11vw;
         min-height: 15em;
@@ -48,21 +51,24 @@ export default class CrProductTeaser extends Teaser {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 2.5em;
+        margin-top: 1em;
       }
       :host figcaption > span {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        max-width: 100%;
       }
       :host figcaption > span > h2 {
         margin-bottom: 0;
         margin-right: 0.625em;
         font-size: 2em;
+        max-width: calc(100% - 1em);
       }
       :host figcaption > span > a-picture {
         height: 2em;
         width: auto;
+        min-width: 1em;
       }
       :host figcaption > p {
         text-align: center;
