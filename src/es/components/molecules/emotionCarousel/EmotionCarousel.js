@@ -205,14 +205,6 @@ export default class EmotionCarousel extends Shadow() {
             z-index: 5; 
             font-size: small;
         }
-        
-      @media only screen and (max-width: 1000px) {
-        .slide-description,
-        .link-description{
-          font-size: xx-small;
-        }
-
-      }
 
       @media only screen and (max-width: 767px) {
         :host {
@@ -222,8 +214,13 @@ export default class EmotionCarousel extends Shadow() {
           --img-height-mobile: 100%;
 
         }
+        .slide-description,
+        .link-description{
+          font-size: 0.8em;
+        }
+
         :host h2{
-          font-size: large;
+          font-size: 2em;
         }
         .title{
           width: 100%
@@ -242,3 +239,4 @@ export default class EmotionCarousel extends Shadow() {
         `
   }
 }
+
