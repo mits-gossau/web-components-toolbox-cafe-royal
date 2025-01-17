@@ -38,6 +38,8 @@ export default class CrProductTeaser extends Teaser {
       }
       :host figure > div {
         border: none;
+        width: 100%;
+        aspect-ratio: 1 / 1;
       }
       :host figure > div > a-picture, :host figure > div > m-carousel-two > section > a-picture {
         object-fit: contain;
