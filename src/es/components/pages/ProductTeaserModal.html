@@ -26,10 +26,10 @@
         margin-bottom: 10px;
     }
 
-    .modal > img {
+    .modal > a-picture {
         width: 219px;
         height: 260px;
-        margin: 15px auto;
+        margin: 0px auto;
     }
 
     .modal > .p1 {
@@ -37,6 +37,7 @@
         font-size: 24px;
         font-weight: 600;
         text-align: center;
+        margin-top: 10px;
         margin-bottom: 0px;
     }
 
@@ -91,15 +92,15 @@
         <span style="position: absolute; top: 20px; right: 20px;">
             <a-icon-mdx icon-name="X" size="1.25em" rotate="0" no-hover-transform></a-icon-mdx>
         </span>
-        <h3 style="font-family: Lexend-Medium, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 29px; font-weight: 900; text-align: center; padding: 0 1.25em; margin-top: 25px; margin-bottom: 10px;">Café Royal Tiramisu</h3>
-        <img style="width: 219px; height: 260px; margin: 15px auto;" src="./img/Cafe-Royal-Tiramisu.png" alt="Café-Royal Tiramisu">
+        <h3 style="font-family: Lexend-Medium, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 29px; font-weight: 900; text-align: center; padding: 0 1.25em; margin-top: 25px; margin-bottom: 0px;">Café Royal Tiramisu</h3>
+        <a-picture style="width: 219px; height: 260px; margin: 0px auto;" namespace="picture-cover-" defaultSource="./img/Cafe-Royal-Tiramisu.png" alt="Café-Royal Tiramisu"></a-picture>
         <p class="p1" style="font-family: Lexend-Semi-Bold, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 600; text-align: center; margin-bottom: 0px;">Wähle aus, wo du das Produkt kaufen möchtest:</p>
         <div class="two-stores" style="display: flex; justify-content: space-evenly; height: 45px; margin: 40px 20px;">
             <a style="display: flex; align-items: center; justify-content: center; height: auto; max-height: 100%; width: calc(100% / 3); margin: 0px;" href="https://www.galaxus.ch/de/s7/product/cafe-royal-dessert-dreams-tiramisu-10-x-port-kaffeekapseln-24176194" target="_blank">
-                <img style="max-height: 100%; width: auto;" src="./img/galaxus-logo-small.png" alt="Galaxus Logo">
+                <a-picture style="max-height: 100%; width: auto;" defaultSource="./img/galaxus-logo-small.png" alt="Galaxus Logo"></a-picture>
             </a>
             <a style="display: flex; align-items: center; justify-content: center; height: auto; max-height: 100%; width: calc(100% / 3); margin: 0px;" href="https://www.migros.ch/de/product/107120400000" target="_blank">
-                <img style="max-height: 100%; width: auto;" src="./img/migros-de-CH.png" alt="Migros Online Logo">
+                <a-picture style="max-height: 100%; width: auto;" defaultSource="./img/migros-de-CH.png" alt="Migros Online Logo"></a-picture>
             </a>
         </div>
         <p class="p2" style="text-align: center; padding: 0 20px; margin-bottom: 20px;">Du wirst direkt auf den Partnershop weitergeleitet</p>
@@ -112,18 +113,18 @@
         <span style="position: absolute; top: 20px; right: 20px;">
             <a-icon-mdx icon-name="X" size="1.25em" rotate="0" no-hover-transform></a-icon-mdx>
         </span>
-        <h3 style="font-family: Lexend-Medium, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 29px; font-weight: 900; text-align: center; padding: 0 1.25em; margin-top: 25px; margin-bottom: 10px;">Café Royal Tiramisu</h3>
-        <img style="width: 219px; height: 260px; margin: 15px auto;" src="./img/Cafe-Royal-Tiramisu.png" alt="Café-Royal Tiramisu">
+        <h3 style="font-family: Lexend-Medium, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 29px; font-weight: 900; text-align: center; padding: 0 1.25em; margin-top: 25px; margin-bottom: 0px;">Café Royal Tiramisu</h3>
+        <a-picture style="width: 219px; height: 260px; margin: 0px auto;" namespace="picture-cover-" defaultSource="./img/Cafe-Royal-Tiramisu.png" alt="Café-Royal Tiramisu"></a-picture>
         <p class="p1" style="font-family: Lexend-Semi-Bold, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 600; text-align: center; margin-bottom: 0px;">Wähle aus, wo du das Produkt kaufen möchtest:</p>
         <div class="three-stores" style="display: grid; grid-template: 'a b c' 1fr; gap: 6%; height: 45px; margin: 40px 20px;">
             <a style="display: flex; align-items: center; max-height: 100%; width: auto; margin: 0px;" href="https://www.galaxus.ch/de/s7/product/cafe-royal-dessert-dreams-tiramisu-10-x-port-kaffeekapseln-24176194" target="_blank">
-                <img src="./img/galaxus-logo-small.png" alt="Galaxus Logo">
+                <a-picture defaultSource="./img/galaxus-logo-small.png" alt="Galaxus Logo"></a-picture>
             </a>
             <a style="display: flex; align-items: center; max-height: 100%; width: auto; margin: 0px;" href="https://www.migros.ch/de/product/107120400000" target="_blank">
-                <img src="./img/migros-de-CH.png" alt="Migros Online Logo">
+                <a-picture defaultSource="./img/migros-de-CH.png" alt="Migros Online Logo"></a-picture>
             </a>
             <a style="display: flex; align-items: center; max-height: 100%; width: auto; margin: 0px;" href="https://www.brack.ch/cafe-royal-kaffeekapseln-fuer-nespresso-tiramisu-100-stueck-1542996" target="_blank">
-                <img src="./img/brack.png" alt="Brack.ch Logo">
+                <a-picture defaultSource="./img/brack.png" alt="Brack.ch Logo"></a-picture>
             </a>
         </div>
         <p class="p2" style="text-align: center; padding: 0 20px; margin-bottom: 20px;">Du wirst direkt auf den Partnershop weitergeleitet</p>
