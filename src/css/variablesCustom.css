@@ -155,6 +155,7 @@
   --picture-hotspot-border-radius: var(--img-border-radius);
   --picture-icon-img-height: 2em;
   --picture-icon-img-width: auto;
+  --product-teaser-figcaption-margin-top: 1em;
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: 0.5em;
   --sustainability-metrics-text-color-secondary: var(--color-white);

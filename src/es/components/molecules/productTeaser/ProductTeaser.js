@@ -53,7 +53,7 @@ export default class CrProductTeaser extends Teaser {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 1em;
+        margin-top: var(--product-teaser-figcaption-margin-top, var(--product-teaser-figcaption-margin, var(--figcaption-margin-top, var(--figcaption-margin, 1em))));
       }
       :host figcaption > span {
         display: flex;
@@ -64,7 +64,7 @@ export default class CrProductTeaser extends Teaser {
       :host figcaption > span > h2 {
         margin-bottom: 0;
         margin-right: 0.625em;
-        font-size: 2em;
+        font-size: var(--product-teaser-h2-font-size, var(--h2-font-size, 2em));
         max-width: calc(100% - 1em);
       }
       :host figcaption > span > a-picture {
