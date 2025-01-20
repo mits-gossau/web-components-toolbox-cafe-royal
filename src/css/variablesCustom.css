@@ -124,8 +124,6 @@
   --h4-font-size: 1.25em;
   --h5-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h5-font-size: 1em;
-  --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --p-font-size: 1em;
   --h6-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h6-font-size: 1em;
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
@@ -149,7 +147,7 @@
   --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
   --navigation-default-color-second-level-custom: var(--color);
   --p-font-family: Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
-  --p-font-size: 16px;
+  --p-font-size: 1em;
   --picture-close-btn-background-color: var(--color-secondary);
   --picture-cover-border-radius: var(--img-border-radius);
   --picture-hotspot-border-radius: var(--img-border-radius);

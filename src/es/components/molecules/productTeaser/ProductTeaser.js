@@ -43,9 +43,6 @@ export default class CrProductTeaser extends Teaser {
       }
       :host figure > div > a-picture, :host figure > div > m-carousel-two > section > a-picture {
         object-fit: contain;
-        height: 11vw;
-        min-height: 15em;
-        width: auto;
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -74,7 +71,8 @@ export default class CrProductTeaser extends Teaser {
       }
       :host figcaption > p {
         text-align: center;
-        margin-top: 1.7em
+        margin-top: 1.7em;
+        font-size: var(--product-teaser-p-font-size, var(--p-font-size, 1em));
       }
       @media only screen and (max-width: _max-width_) {
         
