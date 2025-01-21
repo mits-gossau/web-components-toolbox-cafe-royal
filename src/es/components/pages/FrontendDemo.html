@@ -15,8 +15,7 @@
         <div class="slide">
             <a-emotion-pictures class="slide-img" namespace="emotion-pictures-default-">
                 <a href='https://www.delica.com/-/media/delicacom/Bilder/Slider/CoffeeBall-in-Machine.ashx'>
-                    <a-picture picture-load defaultSource="./img/cr1.jpg"
-                        alt="randomized image"></a-picture>
+                    <a-picture picture-load defaultSource="./img/cr1.jpg" alt="randomized image"></a-picture>
                 </a>
             </a-emotion-pictures>
             <div class="slide-description">
@@ -27,9 +26,7 @@
         <div class="slide">
             <a-emotion-pictures class="slide-img" namespace="emotion-pictures-default-">
                 <a href='https://www.delica.com/-/media/delicacom/Bilder/Slider/CoffeeBall-in-Machine.ashx'>
-                    <a-picture picture-load
-                        defaultSource="./img/cr2.png"
-                        alt="randomized image"></a-picture>
+                    <a-picture picture-load defaultSource="./img/cr2.png" alt="randomized image"></a-picture>
                 </a>
             </a-emotion-pictures>
             <div class="slide-description">
@@ -178,7 +175,7 @@
 <h1>Unsere Standorte</h1>
 <div class="spacer"></div>
 <d-m-standorte-picker>
-    <m-tabs scroll-to-view>
+    <m-tabs>
         <ul class="tab-navigation">
             <li data-tab="quote-requets">Schweiz</li>
             <li data-tab="favorites">Europa</li>
@@ -1699,18 +1696,19 @@
                 :host {
                     line-height: 0;
                 }
+
                 :host,
                 :host>iframe {
                     aspect-ratio: 360 / 640;
                     width: 100%;
                     height: auto;
                     max-height: var(--max-height, 75vh);
-                    border:0;
+                    border: 0;
                 }
             </style>
             <iframe src="https://player.vimeo.com/video/811321475?h=629fa63be7" title="Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen="" width="640" height="360" ></iframe>
+                allowfullscreen="" width="640" height="360"></iframe>
         </template>
     </a-iframe>
 </div>
