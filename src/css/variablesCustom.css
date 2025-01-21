@@ -192,4 +192,5 @@
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
   --picture-store-logo-border-radius: var(--custom-border-radius, 0.75em);
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-store-logo-border-radius-mobile: var(--custom-border-radius, 0.75em);
 }
