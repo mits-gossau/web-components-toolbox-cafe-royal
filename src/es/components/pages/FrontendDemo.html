@@ -10,30 +10,23 @@
         font-weight: bold;
     }
 </style>
-<div>
-    <a href="hello.html" target="_blank">link test change font-weight on hover with style tag</a>
-</div>
 <d-m-emotion-carousel>
     <div class="component-container">
         <div class="slide">
             <a-emotion-pictures class="slide-img" namespace="emotion-pictures-default-">
                 <a href='https://www.delica.com/-/media/delicacom/Bilder/Slider/CoffeeBall-in-Machine.ashx'>
-                    <a-picture picture-load
-                        defaultSource="../../molecules/emotionCarousel/default-/img/CoffeeB.jpg"
-                        alt="randomized image"></a-picture>
+                    <a-picture picture-load defaultSource="./img/cr1.jpg" alt="randomized image"></a-picture>
                 </a>
             </a-emotion-pictures>
             <div class="slide-description">
-                <h2 class="title">DAS KAPSEL-SYSTEM OHNE KAPSEL</h2>
+                <h2 class="title">Wilkommen zur Frontend Demo</h2>
                 <h3><a href="" class="link-description">COFFEEB</a></h3>
             </div>
         </div>
         <div class="slide">
             <a-emotion-pictures class="slide-img" namespace="emotion-pictures-default-">
                 <a href='https://www.delica.com/-/media/delicacom/Bilder/Slider/CoffeeBall-in-Machine.ashx'>
-                    <a-picture picture-load
-                        defaultSource="../../molecules/emotionCarousel/default-/img/Glace_Slider_1a.jpg"
-                        alt="randomized image"></a-picture>
+                    <a-picture picture-load defaultSource="./img/cr2.png" alt="randomized image"></a-picture>
                 </a>
             </a-emotion-pictures>
             <div class="slide-description">
@@ -64,7 +57,13 @@
         </div>
     </div>
 </d-m-emotion-carousel>
-<div class="spacer-two"></div>
+<div>
+   <cr-m-teaser-modal></cr-m-teaser-modal>
+</div>
+<div class="spacer"></div>
+<div>
+    <a href="hello.html" target="_blank">link test change font-weight on hover with style tag</a>
+</div>
 <h1>Wilkommen zur Frontend Demo</h1>
 <p>Von den rund 100‘000 Kaffeebauern in Honduras besitzen die meisten nur kleine Anbauflächen und müssen für die
     Verarbeitung und den Verkauf des Kaffees einen weiten Weg auf sich nehmen. Viele leben fast ausschliesslich vom
@@ -179,7 +178,7 @@
 <h1>Unsere Standorte</h1>
 <div class="spacer"></div>
 <d-m-standorte-picker>
-    <m-tabs scroll-to-view>
+    <m-tabs>
         <ul class="tab-navigation">
             <li data-tab="quote-requets">Schweiz</li>
             <li data-tab="favorites">Europa</li>
@@ -1682,7 +1681,8 @@
 <div class="spacer"></div>
 
 <o-wrapper simulate-children="4">
-    <m-carousel-two history active=11 namespace=carousel-two-default- background-color="var(--m-gray-300)" nav-separate nav-align-self="end">
+    <m-carousel-two history active=11 namespace=carousel-two-default- background-color="var(--m-gray-300)" nav-separate
+        nav-align-self="end">
         <section>
             <a-picture picture-load defaultSource="./img/Glace_002.jpg" alt="randomized image"></a-picture>
             <a-picture picture-load defaultSource="./img/Glace_002.jpg" alt="randomized image"></a-picture>
@@ -1692,3 +1692,26 @@
         </section>
     </m-carousel-two>
 </o-wrapper>
+<div>
+    <a-iframe>
+        <template>
+            <style>
+                :host {
+                    line-height: 0;
+                }
+
+                :host,
+                :host>iframe {
+                    aspect-ratio: 360 / 640;
+                    width: 100%;
+                    height: auto;
+                    max-height: var(--max-height, 75vh);
+                    border: 0;
+                }
+            </style>
+            <iframe src="https://player.vimeo.com/video/811321475?h=629fa63be7" title="Demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="" width="640" height="360"></iframe>
+        </template>
+    </a-iframe>
+</div>

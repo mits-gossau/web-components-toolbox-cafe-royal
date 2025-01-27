@@ -90,7 +90,7 @@ export default class CrProductTeaser extends Teaser {
       {
         path: `${this.importMetaUrl}../../../../css/style.css`, // apply namespace and fallback to allow overwriting on deeper level
         namespaceFallback: true,
-      },
+      }
     ];
     switch (this.getAttribute("namespace")) {
       case "product-teaser-default-":
@@ -104,14 +104,13 @@ export default class CrProductTeaser extends Teaser {
   }
 
   renderHTML() {
+    // path is wrong for FE, but is correct in BE!
     const fetchModules = this.fetchModules([
       {
-        path: "/src/es/components/web-components-toolbox/src/es/components/organisms/grid/Grid.js",
+        path: "/web-components-toolbox-cafe-royal/src/es/components/web-components-toolbox/src/es/components/organisms/grid/Grid.js",
         name: "o-grid",
       },
     ]);
-    Promise.all([fetchModules]).then((_) => {
-      
-    });
+    Promise.all([fetchModules])
   }
 }
