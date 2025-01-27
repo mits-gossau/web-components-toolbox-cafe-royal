@@ -67,7 +67,7 @@ export default class ProductTeaserModal extends Shadow() {
         width: 445px;
         height: fit-content;
         background-color: white;
-        border-radius: 12px;
+        border-radius: var(--custom-border-radius);
         align-items: center;
       }
       :host div > span {
@@ -79,16 +79,22 @@ export default class ProductTeaserModal extends Shadow() {
         display: unset !important;
       }
       :host div > h3 {
-        font-family: Lexend-Medium, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 29px;
         font-weight: 900;
         text-align: center;
-        margin: 25px 1.25em 0px;
+        margin: 1.25em 1.25em 0px;
       }
-      :host div > a-picture {
-        width: 219px;
-        height: 260px;
-        margin: 32px auto;
+      :host div > div.product-image {
+        display: flex;
+        justify-content: center;
+        width: 13.688em;
+        height: 16.25em;
+        margin: 2em auto;
+      }
+      :host div > div.product-image > a-picture {
+        height: auto;
+        max-height: 100%;
+        height: auto;
+        max-width: 100%;
       }
       :host div > h4 {
         font-family: Lexend-Semi-Bold, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
@@ -101,17 +107,17 @@ export default class ProductTeaserModal extends Shadow() {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        height: 45px;
+        height: 2.813em;
         padding: 0px 1.25em;
-        margin: 32px 0px;
+        margin: 2.5em 0px;
       }
       :host div > div.three-stores {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        height: 45px;
+        height: 2.813em;
         padding: 0px 1.25em;
-        margin: 32px 0px;
+        margin: 2.5em 0px;
       }
       :host div > div.two-stores > a {
         display: flex;
@@ -137,10 +143,12 @@ export default class ProductTeaserModal extends Shadow() {
       }
       :host div > p {
         text-align: center;
-        margin: 0px 1.25em 20px;
+        margin: 0px 1.25em 1.25em;
       }
       @media only screen and (max-width: _max-width_) {
-        :host {}
+        :host div {
+          max-width: 80vw;
+        }
       }
     `
     return this.fetchTemplate()
