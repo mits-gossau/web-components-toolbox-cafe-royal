@@ -221,6 +221,8 @@ export default class EmotionCarousel extends Shadow() {
 
         :host h2{
           font-size: 2em;
+          margin-block-end: 0.2em;
+          margin-block-start: 0.2em;
         }
         .title{
           width: 100%
