@@ -1,91 +1,28 @@
-<style>
-    .modal {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 445px;
-        height: fit-content;
-        background-color: white;
-        padding: 20px;
-        border-radius: 12px;
-    }
+<cr-m-product-teaser-modal>
+    <div>
+        <span>
+            <a-icon-mdx icon-name="X" size="1.25em" rotate="0" no-hover-transform></a-icon-mdx>
+        </span>
+        <h3>Café Royal Tiramisu</h3>
+        <a-picture namespace="picture-cover-" defaultSource="./img/Cafe-Royal-Tiramisu.png" alt="Café-Royal Tiramisu"></a-picture>
+        <p class="p1">Wähle aus, wo du das Produkt kaufen möchtest:</p>
+        <div class="three-stores">
+          <a href="https://www.galaxus.ch/de/s7/product/cafe-royal-dessert-dreams-tiramisu-10-x-port-kaffeekapseln-24176194" target="_blank">
+            <a-picture namespace="picture-icon-" defaultSource="./img/galaxus-logo-small.png" alt="Galaxus Logo"></a-picture>
+          </a>
+          <a href="https://www.migros.ch/de/product/107120400000" target="_blank">
+            <a-picture namespace="picture-icon-" defaultSource="./img/migros-de-CH.png" alt="Migros Online Logo"></a-picture>
+          </a>
+          <a href="https://www.brack.ch/cafe-royal-kaffeekapseln-fuer-nespresso-tiramisu-100-stueck-1542996" target="_blank">
+            <a-picture namespace="picture-icon-" defaultSource="./img/brack.png" alt="Brack.ch Logo"></a-picture>
+          </a>
+        </div>
+        <p class="p2">Du wirst direkt auf den Partnershop weitergeleitet</p>
+    </div>
+</cr-m-product-teaser-modal>
 
-    .modal > span {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-    .modal > h3 {
-        font-family: Lexend-Medium, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 29px;
-        font-weight: 900;
-        text-align: center;
-        padding: 0 1.25em;
-        margin-top: 25px;
-        margin-bottom: 10px;
-    }
-
-    .modal > a-picture {
-        width: 219px;
-        height: 260px;
-        margin: 0px auto;
-    }
-
-    .modal > .p1 {
-        font-family: Lexend-Semi-Bold, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 24px;
-        font-weight: 600;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 0px;
-    }
-
-    .modal > div.two-stores {
-        display: flex;
-        justify-content: space-evenly;
-        height: 45px;
-        margin: 40px 20px;
-    }
-
-    .modal > div.three-stores {
-        display: flex;
-        justify-content: space-evenly;
-        height: 45px;
-        margin: 40px 20px;
-    }
-
-    .modal > div.two-stores > a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        max-height: 100%;
-        width: calc(100% / 3 - 6%);
-        margin: 0px;
-    }
-
-    .modal > div.three-stores > a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        max-height: 100%;
-        width: calc(100% / 3);
-        margin: 0px;
-    }
-
-    .modal > div.three-stores > a > img {
-        max-height: 100%;
-        width: auto;
-    }
-
-    .modal > .p2 {
-        text-align: center;
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-</style>
+<hr>
+<h1>alt:</h1>
 
 <div class="background"
     style="display: flex; justify-content: center; align-items: center; width: 100vw; height: 100vh; background-color: #f7f7f7; padding: 20px;">

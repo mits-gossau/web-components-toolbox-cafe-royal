@@ -86,7 +86,6 @@
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
-  
   --color-active: var(--color);
   --color-disabled: var(--color-silver-chalice);
   --color-hover: var(--color);
@@ -102,6 +101,9 @@
   --details-default-icon-right-summary-border-bottom-open-custom: 1px solid var(--color-white);
   --details-default-summary-child-color-custom: var(--color-mine-shaft);
   --details-default-svg-color-custom: var(--color-tertiary);
+  --dialog-default-backdrop-background-color-open: rgba(0,0,0,.451);
+  --dialog-default-border: 0px solid var(--color-white);
+  --dialog-default-border-radius: var(--custom-border-radius);
   --download-box-shadow-color-custom: var(--download-color-custom);
   --download-color-custom: var(--color-tertiary);
   --emotion-carousel-img-max-height: 65vh;
@@ -174,6 +176,7 @@
   --picture-cover-border-radius: var(--custom-border-radius, 0.75em);
   --picture-hotspot-border-radius: var(--custom-border-radius, 0.75em);
   --picture-scale-up-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-store-logo-border-radius: var(--custom-border-radius, 0.75em);
   --picture-teaser-border-radius: var(--custom-border-radius, 0.75em);
   --picture-border-radius-mobile: var(--custom-border-radius, 0.75em);
   --picture-close-btn-background-color-mobile: var(--color-secondary);
@@ -195,6 +198,5 @@
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
-  --picture-store-logo-border-radius: var(--custom-border-radius, 0.75em);
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
 }
