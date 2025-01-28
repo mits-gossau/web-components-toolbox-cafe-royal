@@ -198,5 +198,5 @@
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
   --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
   --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
-  --nav-level-item-default-color: var(--color-cod-gray, black);
+  --nav-level-item-default-color-custom: var(--color-cod-gray, black);
 }
