@@ -63,12 +63,12 @@ export default class ProductTeaserModal extends Shadow() {
       :host div {
         display: flex;
         flex-direction: column;
-        position: relative;
-        width: 445px;
-        height: fit-content;
-        background-color: white;
-        border-radius: var(--custom-border-radius);
         align-items: center;
+        position: relative;
+        width: var(--product-teaser-modal-width, var(--modal-width, 445px));
+        height: var(--product-teaser-modal-height, var(--modal-height, fit-content));
+        background-color: white;
+        border-radius: var(--product-teaser-modal-border-radius, var(--modal-border-radius, 0px));
       }
       :host div > span {
         position: absolute;
@@ -80,14 +80,15 @@ export default class ProductTeaserModal extends Shadow() {
       }
       :host div > h3 {
         font-weight: 900;
+        font-size: var(--product-teaser-modal-h3-font-size, var(--h3-font-size, 29px));
         text-align: center;
         margin: 1.25em 1.25em 0px;
       }
       :host div > div.product-image {
         display: flex;
         justify-content: center;
-        width: 13.688em;
-        height: 16.25em;
+        width: var(--product-teaser-modal-product-image-width, 13.688em);
+        height: var(--product-teaser-modal-product-image-height, 16.25em);
         margin: 2em auto;
       }
       :host div > div.product-image > a-picture {
@@ -98,7 +99,7 @@ export default class ProductTeaserModal extends Shadow() {
       }
       :host div > h4 {
         font-family: Lexend-Semi-Bold, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 24px;
+        font-size: var(--product-teaser-modal-h4-font-size, var(--h4-font-size, 24px));
         font-weight: 600;
         text-align: center;
         margin: 0px 1.25em 0px;
@@ -107,7 +108,7 @@ export default class ProductTeaserModal extends Shadow() {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        height: 2.813em;
+        height: var(--product-teaser-modal-stores-height, 2.813em);
         padding: 0px 1.25em;
         margin: 2.5em 0px;
       }
@@ -115,7 +116,7 @@ export default class ProductTeaserModal extends Shadow() {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        height: 2.813em;
+        height: var(--product-teaser-modal-stores-height, 2.813em);
         padding: 0px 1.25em;
         margin: 2.5em 0px;
       }
@@ -137,17 +138,27 @@ export default class ProductTeaserModal extends Shadow() {
         width: calc(100% / 3 - 6%);
         margin: 0px;
       }
-      :host div > div.three-stores > a > img {
+      :host div > div > a > a-picture {
         max-height: 100%;
         width: auto;
       }
       :host div > p {
+        font-size: var(--product-teaser-modal-p-font-size, var(--p-font-size, 16px));
         text-align: center;
         margin: 0px 1.25em 1.25em;
       }
       @media only screen and (max-width: _max-width_) {
         :host div {
-          max-width: 80vw;
+          max-width: var(--product-teaser-modal-max-width-mobile, 80vw);
+        }
+        :host div > h3 {
+          font-size: var(--product-teaser-modal-h3-font-size-mobile, var(--product-teaser-modal-h3-font-size, var(--h3-font-size-mobile, var(--h3-font-size, 29px))));
+        }
+        :host div > h4 {
+          font-size: var(--product-teaser-modal-h4-font-size-mobile, var(--product-teaser-modal-h4-font-size, var(--h4-font-size-mobile, var(--h4-font-size, 24px))));
+        }
+        :host div > p {
+          font-size: var(--product-teaser-modal-p-font-size-mobile, var(--product-teaser-modal-p-font-size, var(--p-font-size-mobile, var(--p-font-size, 16px))));
         }
       }
     `

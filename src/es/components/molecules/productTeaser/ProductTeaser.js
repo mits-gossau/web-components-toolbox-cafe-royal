@@ -75,7 +75,12 @@ export default class CrProductTeaser extends Teaser {
         font-size: var(--product-teaser-p-font-size, var(--p-font-size, 1em));
       }
       @media only screen and (max-width: _max-width_) {
-        
+        :host figcaption > span > h2 {
+          font-size: var(--product-teaser-h2-font-size-mobile, var(--product-teaser-h2-font-size, var(--h2-font-size-mobile, var(--h2-font-size, 2em))));
+        }
+        :host figcaption > p {
+          font-size: var(--product-teaser-p-font-size-mobile, var(--product-teaser-p-font-size, var(--p-font-size-mobile, var(--p-font-size, 1em))));
+        }
       }
     `;
     return this.fetchTemplate();
