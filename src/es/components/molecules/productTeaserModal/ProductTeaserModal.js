@@ -9,18 +9,6 @@ import { Shadow } from '../../web-components-toolbox/src/es/components/prototype
 export default class ProductTeaserModal extends Shadow() {
   constructor (options = {}, ...args) {
     super({ importMetaUrl: import.meta.url, ...options }, ...args)
-    this.clickListener = event => {
-      // if (!this.hasAttribute('open')) event.stopPropagation()
-      // this.dispatchEvent(new CustomEvent(this.getAttribute('open-modal') || 'open-modal', {
-      //   detail: {
-      //     origEvent: event,
-      //     child: this
-      //   },
-      //   bubbles: true,
-      //   cancelable: true,
-      //   composed: true
-      // }))
-    }
   }
 
   connectedCallback () {
@@ -29,11 +17,9 @@ export default class ProductTeaserModal extends Shadow() {
     if (this.shouldRenderCSS()) showPromises.push(this.renderCSS())
     if (this.shouldRenderHTML()) showPromises.push(this.renderHTML())
     Promise.all(showPromises).then(() => (this.hidden = false))
-    this.addEventListener('click', this.clickListener)
   }
 
   disconnectedCallback () {
-    this.removeEventListener('click', this.clickListener)
   }
 
   /**
