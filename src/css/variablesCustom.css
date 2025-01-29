@@ -60,16 +60,6 @@
 }
 
 :root {
-  --custom-border-radius: 0.75em;
-  --color-white: #FFFFFF;
-  --color-spring-wood: #F5F3EC;
-  --color-black: #000000;
-  --color-silver-chalice: #A4A4A4;
-  --color-concrete: #F2F2F2;
-  --color-cod-gray: #121212;
-  --color-mine-shaft: #212121;
-  --color-dusty-gray: #949494;
-  /* standard toolbox */
   --a-color: var(--color-cod-gray);
   --background-color: var(--color-white);
   --background-secondary: var(--color-spring-wood);
@@ -87,14 +77,23 @@
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
   --color-active: var(--color);
+  --color-black: #000000;
+  --color-cod-gray: #121212;
+  --color-concrete: #F2F2F2;
   --color-disabled: var(--color-silver-chalice);
+  --color-dusty-gray: #949494;
   --color-hover: var(--color);
+  --color-mine-shaft: #212121;
   --color-quaternary: var(--color-concrete);
   --color-secondary: var(--color-cod-gray);
+  --color-silver-chalice: #A4A4A4;
+  --color-spring-wood: #F5F3EC;
   --color-tertiary: var(--color-mine-shaft);
+  --color-white: #FFFFFF;
   --color: var(--color-cod-gray);
   --content-spacing-mobile: 2rem;
   --content-spacing: 1.7em;
+  --custom-border-radius: 0.75em;
   --default-h5-margin: 0 0 0.5em;
   --default-p-font-size: 0.875em;
   --details-default-icon-right-h4-color: var(--color-white);
@@ -129,14 +128,17 @@
   --h1-font-size-mobile: 28px;
   --h1-font-size: 36px;
   --h1-text-align: center;
+  --h1-line-height: var(--h2-line-height, 37px);
   --h2-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h2-font-size-mobile: 24px;
+  --h2-line-height-mobile: 28px;
   --h2-font-size: 32px;
   --h2-line-height: 37px;
   --h3-font-family: Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h3-font-size-mobile: 22px;
   --h3-font-size: 30px;
-  --h3-line-height: 23px;
+  --h3-line-height-mobile: 26px;
+  --h3-line-height: 34px;
   --h4-font-family: Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h4-font-size-mobile: 18px;
   --h4-font-size: 20px;
@@ -149,6 +151,7 @@
   --h6-font-size-mobile: 16px;
   --h6-font-size: 18px;
   --h6-line-height: 24px;
+  --ul-li-font-family: Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
   --header-default-a-logo-top-mobile-custom: -0.5em;
   --header-default-a-menu-icon-background-color-custom: var(--color-secondary);
@@ -179,13 +182,21 @@
   --picture-store-logo-border-radius: var(--custom-border-radius, 0.75em);
   --picture-teaser-border-radius: var(--custom-border-radius, 0.75em);
   --picture-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-border-radius: var(--custom-border-radius, 0.75em);
   --picture-close-btn-background-color-mobile: var(--color-secondary);
+  --picture-close-btn-background-color: var(--color-secondary);
   --picture-cover-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-cover-border-radius: var(--custom-border-radius, 0.75em);
   --picture-hotspot-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-hotspot-border-radius: var(--custom-border-radius, 0.75em);
   --picture-icon-img-height: 2em;
   --picture-icon-img-width: auto;
   --picture-scale-up-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-scale-up-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-store-logo-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-store-logo-border-radius: var(--custom-border-radius, 0.75em);
   --picture-teaser-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-teaser-border-radius: var(--custom-border-radius, 0.75em);
   --picture-teaser-img-object-fit: cover;
   --product-teaser-figcaption-margin-top: 1em;
   --product-teaser-modal-border-radius: var(--custom-border-radius, 0.75em);
@@ -204,8 +215,11 @@
   --search-input-width-big: 100%;
   --standorte-picker-color-active: var(--color);
   --sustainability-metrics-text-color-secondary: var(--color-white);
+  --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
+  --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
-  --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
+  --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
+  --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
+  --nav-level-item-default-color-custom: var(--color-cod-gray, black);
 }
