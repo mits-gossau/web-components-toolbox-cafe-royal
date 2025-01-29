@@ -19,8 +19,6 @@ export default class ProductTeaserModal extends Shadow() {
     Promise.all(showPromises).then(() => (this.hidden = false))
   }
 
-  disconnectedCallback () {
-  }
 
   /**
    * evaluates if a render is necessary
