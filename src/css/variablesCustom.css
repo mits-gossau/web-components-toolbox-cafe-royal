@@ -71,8 +71,8 @@
   --button-primary-background-color-hover-custom: var(--color-quaternary);
   --button-primary-color-hover-custom: var(--color-cod-gray);
   --carousel-container-background: var(--color-spring-wood);
-  --carousel-two-default-background-color: var(--color-spring-wood);
-  --carousel-two-defaultarrow-nav-size-small: 1.5em;
+  --carousel-two-default-background-color: var(--color-white);
+  --carousel-two-default-arrow-nav-size: 1.5em;
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
