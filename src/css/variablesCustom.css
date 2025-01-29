@@ -196,6 +196,7 @@
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-black);
-  /* standard toolbox */
+  --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
+  --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
+  --nav-level-item-default-color-custom: var(--color-cod-gray, black);
 }
