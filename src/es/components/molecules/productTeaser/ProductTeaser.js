@@ -36,11 +36,13 @@ export default class CrProductTeaser extends Teaser {
         background-repeat: no-repeat;
         margin: 2.5em;
       }
-      :host figure > img, :host figure > m-carousel-two > section > img {
+      :host figure > div {
+        border: none;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+      }
+      :host figure > div > a-picture, :host figure > div > m-carousel-two > section > a-picture {
         object-fit: contain;
-        height: 11vw;
-        min-height: 15em;
-        width: auto;
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -48,38 +50,37 @@ export default class CrProductTeaser extends Teaser {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: var(--product-teaser-figcaption-margin-top, var(--product-teaser-figcaption-margin, var(--figcaption-margin-top, var(--figcaption-margin, 1em))));
       }
       :host figcaption > span {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+        max-width: 100%;
       }
       :host figcaption > span > h2 {
         margin-bottom: 0;
         margin-right: 0.625em;
-        font-size: 2em;
+        font-size: var(--product-teaser-h2-font-size, var(--h2-font-size, 2em));
+        max-width: calc(100% - 1em);
       }
-      :host figcaption > span > img {
+      :host figcaption > span > a-picture {
         height: 2em;
         width: auto;
+        min-width: 1em;
       }
       :host figcaption > p {
         text-align: center;
-        margin-top: 1.7em
-      }
-      :host figcaption > button {
-        cursor: pointer;
-        color: #f2f2f2;
-        background-color: #121212;
-        font-family: Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: 1em;
-        text-align: center;
-        padding: 0.75em 1.5em;
-        border: 0 solid;
-        border-radius: 0.5em;
+        margin-top: 1.7em;
+        font-size: var(--product-teaser-p-font-size, var(--p-font-size, 1em));
       }
       @media only screen and (max-width: _max-width_) {
-        
+        :host figcaption > span > h2 {
+          font-size: var(--product-teaser-h2-font-size-mobile, var(--product-teaser-h2-font-size, var(--h2-font-size-mobile, var(--h2-font-size, 2em))));
+        }
+        :host figcaption > p {
+          font-size: var(--product-teaser-p-font-size-mobile, var(--product-teaser-p-font-size, var(--p-font-size-mobile, var(--p-font-size, 1em))));
+        }
       }
     `;
     return this.fetchTemplate();
