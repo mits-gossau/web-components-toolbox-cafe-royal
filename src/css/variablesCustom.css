@@ -71,8 +71,10 @@
   --button-primary-background-color-hover-custom: var(--color-quaternary);
   --button-primary-color-hover-custom: var(--color-cod-gray);
   --carousel-container-background: var(--color-spring-wood);
-  --carousel-two-default-background-color: var(--color-spring-wood);
-  --carousel-two-defaultarrow-nav-size-small: 1.5em;
+  --carousel-two-default-background-color: var(--color-white);
+  --carousel-two-default-color-custom: var(--color-silver-chalice);
+  --carousel-two-default-color-hover-custom: var(--color-cod-gray);
+  --carousel-two-default-arrow-nav-size: 1.5em;
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --carousel-two-default-svg-size: 1em;
@@ -200,7 +202,7 @@
   --picture-teaser-border-radius-mobile: var(--custom-border-radius, 0.75em);
   --picture-teaser-border-radius: var(--custom-border-radius, 0.75em);
   --picture-teaser-img-object-fit: cover;
-  --product-teaser-figcaption-margin-top: 1em;
+  --product-teaser-figcaption-margin-top: 2em;
   --product-teaser-modal-border-radius: var(--custom-border-radius, 0.75em);
   --product-teaser-modal-h4-font-size: 24px;
   --product-teaser-modal-h4-font-size-mobile: 20px;
