@@ -54,20 +54,20 @@ export default class CrProductTeaser extends Teaser {
         align-items: center;
         margin-top: var(--product-teaser-figcaption-margin-top, var(--product-teaser-figcaption-margin, var(--figcaption-margin-top, var(--figcaption-margin, 1em))));
       }
-      :host figcaption > div {
+      :host figcaption > div.title {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
         max-width: 100%;
         border: 0;
       }
-      :host figcaption > div > h2 {
+      :host figcaption > div.title > h2 {
         margin-bottom: 0;
         margin-right: 0.625em;
         font-size: var(--product-teaser-h2-font-size, var(--h2-font-size, 2em));
         max-width: calc(100% - 1em);
       }
-      :host figcaption > div > a-picture {
+      :host figcaption > div.title > a-picture {
         height: 2em;
         width: auto;
         min-width: 1em;
@@ -78,7 +78,7 @@ export default class CrProductTeaser extends Teaser {
         font-size: var(--product-teaser-p-font-size, var(--p-font-size, 1em));
       }
       @media only screen and (max-width: _max-width_) {
-        :host figcaption > span > h2 {
+        :host figcaption > div > h2 {
           font-size: var(--product-teaser-h2-font-size-mobile, var(--product-teaser-h2-font-size, var(--h2-font-size-mobile, var(--h2-font-size, 2em))));
         }
         :host figcaption > p {
