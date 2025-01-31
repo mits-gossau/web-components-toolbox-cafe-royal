@@ -226,7 +226,6 @@
   --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
   --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
   --nav-level-item-default-color-custom: var(--color-cod-gray, black);
-  --carousel-two-default-svg-size: 0.85em;
   --carousel-two-default-nav-transform-hover: none;
   --carousel-two-default-nav-transform-active: none;
   --carousel-two-default-nav-background-color-active:var(--arrow-svg-color-custom, gray);
