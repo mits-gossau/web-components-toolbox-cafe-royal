@@ -91,8 +91,8 @@
   --color-tertiary: var(--color-mine-shaft);
   --color-white: #FFFFFF;
   --color: var(--color-cod-gray);
-  --arrow-svg-color-custom: #e3e3e3;
-  --arrow-svg-color-hover-custom: var(--color-dusty-gray, gray);
+  --arrow-svg-color-custom: var(--color-dusty-gray, #e3e3e3);
+  --arrow-svg-color-hover-custom: #c4c3c0;
   --content-spacing-mobile: 2rem;
   --content-spacing: 1.7em;
   --custom-border-radius: 0.75em;
@@ -225,9 +225,7 @@
   --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
   --nav-level-item-default-color-custom: var(--color-cod-gray, black);
   --carousel-two-default-svg-size: 0.85em;
-  --carousel-two-default-p-margin: none;
   --carousel-two-default-nav-transform-hover: none;
   --carousel-two-default-nav-transform-active: none;
-  --carousel-two-default-line-height: 0;
   --carousel-two-default-nav-background-color-active:var(--arrow-svg-color-custom, gray);
 }
