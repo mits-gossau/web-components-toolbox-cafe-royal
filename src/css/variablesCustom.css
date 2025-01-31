@@ -200,7 +200,7 @@
   --picture-teaser-border-radius-mobile: var(--custom-border-radius, 0.75em);
   --picture-teaser-border-radius: var(--custom-border-radius, 0.75em);
   --picture-teaser-img-object-fit: cover;
-  --product-teaser-figcaption-margin-top: 1em;
+  --product-teaser-figcaption-margin-top: 2em;
   --product-teaser-modal-border-radius: var(--custom-border-radius, 0.75em);
   --product-teaser-modal-h4-font-size: 24px;
   --product-teaser-modal-h4-font-size-mobile: 20px;
