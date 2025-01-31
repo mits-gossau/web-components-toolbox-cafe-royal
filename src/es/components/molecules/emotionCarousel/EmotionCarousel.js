@@ -81,7 +81,7 @@ export default class EmotionCarousel extends Shadow() {
       --picture-cover-img-max-height: none;
       --any-margin-top-first-child: var(--content-spacing);
       --content-width: 100%;
-      --color: white;
+      --color: var(--arrow-svg-color-custom, #dcdcdc);
       font-size: large;
       display: flex;
       justify-content: center;
@@ -90,7 +90,7 @@ export default class EmotionCarousel extends Shadow() {
       height:38vw;
       max-height: var(--emotion-carousel-img-max-height, none);
       margin: 0; 
-      --svg-size: 2em;
+      --svg-size: 3em;
       
     }
 
@@ -192,7 +192,7 @@ export default class EmotionCarousel extends Shadow() {
             justify-content: flex-end;
           }
           .section:hover{
-            --color: var(--color-dusty-gray, var(--color-tertiary));
+            --color: var(--arrow-svg-color-hover-custom, var(--color-tertiary));
           }
 
           .link-description {
@@ -233,8 +233,15 @@ export default class EmotionCarousel extends Shadow() {
           padding: 0px;
         
         }
-        .controls{
-          display: none;
+        .section{
+          width: 20%;
+          position: relative; 
+        }
+        .section.right{
+          right: -0.7em;
+        }
+        .section.left{
+          left: -0.7em;
         }
 
 

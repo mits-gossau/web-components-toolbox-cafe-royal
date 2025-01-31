@@ -86,7 +86,7 @@ export default class YearCarousel extends Shadow() {
     this.css = /* css */`
 
           :host {
-            --color: white;
+            --color: var(--arrow-svg-color-custom, #dcdcdc);
             font-size: large;
             display: flex;
             justify-content: center;
@@ -155,7 +155,7 @@ export default class YearCarousel extends Shadow() {
             background-color: rgba(0, 0, 0, 0.4);
             z-index: 2;
             width: 100%; 
-            color: white;
+            color: var(--arrow-svg-color-custom, #dcdcdc);
             padding: 10px;
             box-sizing: border-box;
             bottom: 0; 
@@ -198,7 +198,7 @@ export default class YearCarousel extends Shadow() {
             justify-content: flex-end;
           }
           .section:hover{
-            --color: var(--color-tertiary, #e0b15c);
+            --color: var(--arrow-svg-color-hover-custom, #e0b15c);
           }
 
           .swipe{
