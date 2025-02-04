@@ -90,7 +90,7 @@ export default class EmotionCarousel extends Shadow() {
       height:38vw;
       max-height: var(--emotion-carousel-img-max-height, none);
       margin: 0; 
-      --svg-size: 3em;
+      --svg-size: var( --carousel-two-default-arrow-nav-size, 3em);
       
     }
 
