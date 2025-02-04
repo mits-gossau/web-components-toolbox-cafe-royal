@@ -23,6 +23,8 @@ export default class CrProductTeaser extends Teaser {
     this.css = /* css */ `
       :host {
         display: block;
+        --carousel-two-default-background-color: var(--color-white);
+        --carousel-two-default-svg-size: 1em;
       }
       :host div {
         background-color: white;
