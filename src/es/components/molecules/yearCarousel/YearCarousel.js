@@ -87,14 +87,13 @@ export default class YearCarousel extends Shadow() {
 
           :host {
             --color: var(--arrow-svg-color-custom, #dcdcdc);
-            font-size: large;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             height: fit-content;
             margin: 0; 
-            --svg-size: 2em;
+            --svg-size: var(--carousel-two-default-arrow-nav-size, 2em);
           }
 
           :host a-picture{
