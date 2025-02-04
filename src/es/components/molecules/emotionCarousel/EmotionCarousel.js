@@ -82,7 +82,6 @@ export default class EmotionCarousel extends Shadow() {
       --any-margin-top-first-child: var(--content-spacing);
       --content-width: 100%;
       --color: var(--arrow-svg-color-custom, #dcdcdc);
-      font-size: large;
       display: flex;
       justify-content: center;
       align-items: center;
