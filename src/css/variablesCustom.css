@@ -194,6 +194,7 @@
   --sustainability-metrics-text-color-secondary: var(--color-white);
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
   --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
+  --teaser-plain-figcaption-justify-content-custom: flex-start;
   --teaser-plain-p-line-height-custom: 1.5em;
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
