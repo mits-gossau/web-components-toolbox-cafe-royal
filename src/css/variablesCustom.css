@@ -201,4 +201,5 @@
   --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
   --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
   --nav-level-item-default-color-custom: var(--color-cod-gray, black);
+  --teaser-plain-border-radius-mobile-custom: var(--custom-border-radius, 0.75em);
 }
