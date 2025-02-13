@@ -59,12 +59,13 @@ export default class CrProductTeaser extends Teaser {
         flex-wrap: nowrap;
         align-items: center;
         max-width: 100%;
+        min-height: var(--product-teaser-title-min-height, 3.75em);
         border: 0;
       }
-      :host figcaption > div.title > h2 {
+      :host figcaption > div.title > h3 {
         margin-bottom: 0;
         margin-right: 0.625em;
-        font-size: var(--product-teaser-h2-font-size, var(--h2-font-size, 2em));
+        font-size: var(--product-teaser-h3-font-size, var(--h3-font-size, 1.875em));
         max-width: calc(100% - 1em);
       }
       :host figcaption > div.title > a-picture {
@@ -72,14 +73,18 @@ export default class CrProductTeaser extends Teaser {
         width: auto;
         min-width: 1em;
       }
-      :host figcaption > p {
+      :host figcaption > div.text {
+        min-height: var(--product-teaser-text-min-height, 6em);
+        border: 0;
+      }
+      :host figcaption > div.text > p {
         text-align: center;
         margin-top: 1.7em;
         font-size: var(--product-teaser-p-font-size, var(--p-font-size, 1em));
       }
       @media only screen and (max-width: _max-width_) {
-        :host figcaption > div > h2 {
-          font-size: var(--product-teaser-h2-font-size-mobile, var(--product-teaser-h2-font-size, var(--h2-font-size-mobile, var(--h2-font-size, 2em))));
+        :host figcaption > div > h3 {
+          font-size: var(--product-teaser-h3-font-size-mobile, var(--product-teaser-h3-font-size, var(--h3-font-size-mobile, var(--h3-font-size, 1.375em))));
         }
         :host figcaption > p {
           font-size: var(--product-teaser-p-font-size-mobile, var(--product-teaser-p-font-size, var(--p-font-size-mobile, var(--p-font-size, 1em))));
