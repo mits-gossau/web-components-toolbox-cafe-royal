@@ -25,7 +25,7 @@ export default class CrProductTeaser extends Teaser {
         display: block;
       }
       :host div {
-        background-color: white;
+        background-color: var(--color-white);
         border: 0.125em solid rgba(0, 0, 0, .07);
         border-radius: 0.75em;
       }
@@ -81,6 +81,10 @@ export default class CrProductTeaser extends Teaser {
         text-align: center;
         margin-top: 1.7em;
         font-size: var(--product-teaser-p-font-size, var(--p-font-size, 1em));
+      }
+      :host figcaption > div.no-button {
+        height: 3em;
+        border: 0;
       }
       @media only screen and (max-width: _max-width_) {
         :host figcaption > div > h3 {
