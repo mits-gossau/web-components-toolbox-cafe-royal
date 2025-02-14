@@ -202,4 +202,5 @@
   --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
   --nav-level-item-default-color-custom: var(--color-cod-gray, black);
   --teaser-plain-border-radius-mobile-custom: var(--custom-border-radius, 0.75em);
+   --arrow-svg-color-hover-custom: var(--color-dusty-gray, gray);
 }
