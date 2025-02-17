@@ -189,6 +189,9 @@
   --picture-teaser-img-object-fit: cover;
   --product-teaser-figcaption-margin-top: 2em;
   --product-teaser-modal-border-radius: var(--custom-border-radius, 0.75em);
+  --product-teaser-h3-font-size-mobile: var(--h5-font-size);
+  --product-teaser-text-min-height: calc(6 * 1.5 * var(--p-font-size, 16px));
+  --product-teaser-title-min-height: calc(2 * var(--h3-line-height, 34px));
   --product-teaser-modal-h4-font-size: 24px;
   --product-teaser-modal-h4-font-size-mobile: 20px;
   --product-teaser-modal-height: fit-content;
@@ -197,8 +200,6 @@
   --product-teaser-modal-product-image-width: 13.688em;
   --product-teaser-modal-stores-height: 2.813em;
   --product-teaser-modal-width: 445px;
-  --product-teaser-text-min-height: calc(6 * var(--p-font-size, 16px));
-  --product-teaser-title-min-height: calc(2 * var(--h3-font-size, 30px));
   --recipe-table-background-tint: var(--color-spring-wood);
   --recipe-table-header-height: 3em;
   --scroll-to-top-host-button-primary-border-radius: var(--custom-border-radius, 0.5em);;
