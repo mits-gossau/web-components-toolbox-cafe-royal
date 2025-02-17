@@ -66,12 +66,11 @@ export default class CrProductTeaser extends Teaser {
         margin-bottom: 0;
         margin-right: 0.625em;
         font-size: var(--product-teaser-h3-font-size, var(--h3-font-size, 1.875em));
-        max-width: calc(100% - 1em);
+        max-width: calc(100% - 2em);
       }
       :host figcaption > div.title > a-picture {
         height: 2em;
-        width: auto;
-        min-width: 1em;
+        width: 2em;
       }
       :host figcaption > div.text {
         min-height: var(--product-teaser-text-min-height, 6em);
