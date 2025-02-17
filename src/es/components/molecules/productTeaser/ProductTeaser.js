@@ -23,6 +23,18 @@ export default class CrProductTeaser extends Teaser {
     this.css = /* css */ `
       :host {
         display: block;
+        --button-primary-color-hover-custom: var(--color-cod-gray);
+        --button-primary-background-color-hover-custom: var(--color-quaternary);
+        --button-primary-color-hover-custom: var(--color-cod-gray);
+        --carousel-two-default-background-color: var(--color-white);
+        --carousel-two-default-color-custom: var(--color-silver-chalice);
+        --carousel-two-default-color-hover-custom: var(--color-cod-gray);
+        --carousel-two-default-arrow-nav-size: 1.5em;
+        --arrow-svg-color-custom: var(--color-dusty-gray, #e3e3e3);
+        --arrow-svg-color-hover-custom: #c4c3c0;
+          --picture-icon-img-height: 2em;
+        --picture-icon-img-width: auto;
+        --carousel-two-default-nav-background-color-active:var(--arrow-svg-color-custom, gray);
       }
       :host div {
         background-color: var(--color-white);

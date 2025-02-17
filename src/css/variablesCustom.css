@@ -68,13 +68,10 @@
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
   --button-primary-background-color-custom: var(--color-tertiary);
-  --button-primary-background-color-hover-custom: var(--color-quaternary);
-  --button-primary-color-hover-custom: var(--color-cod-gray);
+  --button-primary-color-hover-custom: var(--color-concrete);
   --carousel-container-background: var(--color-spring-wood);
-  --carousel-two-default-background-color: var(--color-white);
-  --carousel-two-default-color-custom: var(--color-silver-chalice);
-  --carousel-two-default-color-hover-custom: var(--color-cod-gray);
-  --carousel-two-default-arrow-nav-size: 1.5em;
+  --carousel-two-default-background-color: var(--color-spring-wood);
+  --carousel-two-default-svg-size: 1em;
   --carousel-two-default-nav-height: 0.6em;
   --carousel-two-default-nav-width: 0.6em;
   --color-active: var(--color);
@@ -92,8 +89,6 @@
   --color-tertiary: var(--color-mine-shaft);
   --color-white: #FFFFFF;
   --color: var(--color-cod-gray);
-  --arrow-svg-color-custom: var(--color-dusty-gray, #e3e3e3);
-  --arrow-svg-color-hover-custom: #c4c3c0;
   --content-spacing-mobile: 2rem;
   --content-spacing: 1.7em;
   --custom-border-radius: 0.75em;
@@ -185,8 +180,6 @@
   --picture-cover-border-radius: var(--custom-border-radius, 0.75em);
   --picture-hotspot-border-radius-mobile: var(--custom-border-radius, 0.75em);
   --picture-hotspot-border-radius: var(--custom-border-radius, 0.75em);
-  --picture-icon-img-height: 2em;
-  --picture-icon-img-width: auto;
   --picture-scale-up-border-radius-mobile: var(--custom-border-radius, 0.75em);
   --picture-scale-up-border-radius: var(--custom-border-radius, 0.75em);
   --picture-store-logo-border-radius-mobile: var(--custom-border-radius, 0.75em);
@@ -222,7 +215,6 @@
   --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
   --multi-level-navigation-delica-color: var(--color-cod-gray, black); 
   --nav-level-item-default-color-custom: var(--color-cod-gray, black);
-  --carousel-two-default-nav-background-color-active:var(--arrow-svg-color-custom, gray);
   --teaser-plain-border-radius-mobile-custom: var(--custom-border-radius, 0.75em);
   --arrow-svg-color-hover-custom: var(--color-dusty-gray, gray);
   --carousel-two-default-nav-transform-hover: none;
