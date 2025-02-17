@@ -51,6 +51,7 @@ export default class CrProductTeaser extends Teaser {
       :host figure > div {
         display: flex;
         align-items: center;
+        justify-content: center;
         width: 100%;
         border: none;
         aspect-ratio: 1 / 1;
