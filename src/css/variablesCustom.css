@@ -196,8 +196,6 @@
   --product-teaser-figcaption-margin-top: 2em;
   --product-teaser-h3-font-size-mobile: var(--h5-font-size);
   --product-teaser-modal-border-radius: var(--custom-border-radius, 0.75em);
-  --product-teaser-modal-h4-font-size-mobile: 20px;
-  --product-teaser-modal-h4-font-size: 24px;
   --product-teaser-modal-height: fit-content;
   --product-teaser-modal-max-width-mobile: 80vw;
   --product-teaser-modal-product-image-height: 16.25em;
