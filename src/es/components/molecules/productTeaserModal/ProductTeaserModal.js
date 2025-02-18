@@ -81,9 +81,9 @@ export default class ProductTeaserModal extends Shadow() {
         height: auto;
         max-width: 100%;
       }
-      :host div > h4 {
+      :host div > h6 {
         font-family: Lexend-Semi-Bold, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
-        font-size: var(--product-teaser-modal-h4-font-size, var(--h4-font-size, 24px));
+        font-size: var(--product-teaser-modal-h6-font-size, var(--h6-font-size, 18px));
         font-weight: 600;
         text-align: center;
         margin: 0px 1.25em 0px;
@@ -138,8 +138,8 @@ export default class ProductTeaserModal extends Shadow() {
         :host div > h3 {
           font-size: var(--product-teaser-modal-h3-font-size-mobile, var(--product-teaser-modal-h3-font-size, var(--h3-font-size-mobile, var(--h3-font-size, 29px))));
         }
-        :host div > h4 {
-          font-size: var(--product-teaser-modal-h4-font-size-mobile, var(--product-teaser-modal-h4-font-size, var(--h4-font-size-mobile, var(--h4-font-size, 24px))));
+        :host div > h6 {
+          font-size: var(--product-teaser-modal-h6-font-size-mobile, var(--product-teaser-modal-h6-font-size, var(--h6-font-size-mobile, var(--h6-font-size, 16px))));
         }
         :host div > p {
           font-size: var(--product-teaser-modal-p-font-size-mobile, var(--product-teaser-modal-p-font-size, var(--p-font-size-mobile, var(--p-font-size, 16px))));
