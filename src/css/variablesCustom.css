@@ -60,6 +60,7 @@
 }
 
 :root {
+  --title-border-display: none;
   --a-color: var(--color-cod-gray);
   --arrow-svg-color-hover-custom: var(--color-dusty-gray, gray);
   --background-color: var(--color-white);
