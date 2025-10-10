@@ -153,6 +153,7 @@
   --h6-font-size-mobile: 16px;
   --h6-font-size: 18px;
   --h6-line-height: 24px;
+  --h6-text-align: start;
   --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
   --header-default-a-logo-top-mobile-custom: -0.5em;
   --header-default-a-menu-icon-background-color-custom: var(--color-secondary);
