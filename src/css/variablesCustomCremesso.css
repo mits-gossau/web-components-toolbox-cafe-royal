@@ -180,6 +180,7 @@
   --hr-secondary-border-bottom: 2px solid var(--color-secondary);
   --hr-secondary-opacity: 1;
   --img-border-radius: var(--custom-border-radius, 0.75em);
+  --language-switcher-delica-a-margin: 0;
   --language-switcher-delica-content-spacing-custom: .5em;
   --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
   --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
