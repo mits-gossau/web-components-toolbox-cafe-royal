@@ -138,7 +138,6 @@
   --footer-default-invert-svg-color-custom: var(--background-tertiary);
   --footer-default-invert-svg-color-hover-custom: var(--color-white);
   --h-border-after: false;
-  --h-color: var(--color-secondary);
   --h-font-weight: 900;
   --h1-font-family: PTSansPro-Bold, Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --h1-font-size-mobile: 28px;
