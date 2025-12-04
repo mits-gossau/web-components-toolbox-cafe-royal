@@ -1,0 +1,238 @@
+/**
+ * Variables naming rule: --{selector aka component aka namespace}-{css property}-{pseudo class or media query name} eg. --p-background-color-hover 
+ * NOTE: Within the component don't use any name spacing eg. component header don't use --header-default-color just use --color the namespace can be added by the Shadow as an html attribute
+ * - if a component holds other components or nodes you can declare or remap classes eg. :host > h1 {--color: var(--h1-color, white);}
+ * - if a component holds other components you should share the attribute namespace with its children
+ */
+
+@import url("https://cdn.fonts.net/t/1.css?apiType=css&projectid=61706f95-a45d-4709-9988-c03ffe41ae2e");
+
+@font-face {
+  font-family: "PTSansPro-Regular";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/PT%20Sans%20Pro/PTSansPro_normal_normal_400.woff2") format("woff2"), url("https://cdn.migros.ch/ch.migros/static/fonts/PT%20Sans%20Pro/PTSansPro_normal_normal_400.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTSansPro-Bold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/PT%20Sans%20Pro/PTSansPro_normal_normal_700.woff2") format("woff2"), url("https://cdn.migros.ch/ch.migros/static/fonts/PT%20Sans%20Pro/PTSansPro_normal_normal_700.woff") format("woff");
+}
+
+/* 100 */
+@font-face {
+  font-family: "Lexend-Thin";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Thin.woff2") format("woff2");
+}
+
+/* 200 */
+@font-face {
+  font-family: "Lexend-ExtraLight";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-ExtraLight.woff2") format("woff2");
+}
+
+/* 300*/
+@font-face {
+  font-family: "Lexend-Light";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Light.woff2") format("woff2");
+}
+
+/* 400 */
+@font-face {
+  font-family: "Lexend-Regular";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Regular.woff2") format("woff2");
+}
+
+/* 500 */
+@font-face {
+  font-family: "Lexend-Medium";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Medium.woff2") format("woff2");
+}
+
+/* 600 */
+@font-face {
+  font-family: "Lexend-SemiBold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-SemiBold.woff2") format("woff2");
+}
+
+/* 700 */
+@font-face {
+  font-family: "Lexend-Bold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Bold.woff2") format("woff2");
+}
+
+/* 800 */
+@font-face {
+  font-family: "Lexend-ExtraBold";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-ExtraBold.woff2") format("woff2");
+}
+
+/* 900 */
+@font-face {
+  font-family: "Lexend-Black";
+  src: url("https://cdn.migros.ch/ch.migros/static/fonts/Lexend/Lexend-Black.woff2") format("woff2");
+}
+
+:root {
+  --title-border-display: none;
+  --a-color: var(--color-cod-gray);
+  --arrow-svg-color-hover-custom: var(--color-dusty-gray, gray);
+  --background-color: var(--color-white);
+  --background-secondary: var(--color-spring-wood);
+  --background-tertiary: var(--color-black);
+  --bg-line-height: 1.5em;
+  --button-category-background-color-custom: var(--color-quaternary);
+  --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
+  --button-primary-background-color-custom: var(--color-tertiary);
+  --button-primary-color-hover-custom: var(--color-concrete);
+  --carousel-container-background: var(--color-spring-wood);
+  --carousel-two-default-background-color: var(--color-spring-wood);
+  --carousel-two-default-line-height: 0;
+  --carousel-two-default-nav-height: 0.6em;
+  --carousel-two-default-nav-transform-active: none;
+  --carousel-two-default-nav-transform-hover: none;
+  --carousel-two-default-nav-width: 0.6em;
+  --carousel-two-default-svg-size: 0.85em;
+  --color-active: var(--color);
+  --color-black: #000000;
+  --color-cod-gray: #121212;
+  --color-concrete: #F2F2F2;
+  --color-disabled: var(--color-silver-chalice);
+  --color-dusty-gray: #949494;
+  --color-hover: var(--color);
+  --color-mine-shaft: #212121;
+  --color-quaternary: var(--color-concrete);
+  --color-secondary: #8A1E40;
+  --color-tertiary: #d5895e;
+  --color-silver-chalice: #A4A4A4;
+  --color-spring-wood: #F5F3EC;
+  --color-tertiary: var(--color-mine-shaft);
+  --color-white: #FFFFFF;
+  --color: #353535;
+  --content-spacing-mobile: 2rem;
+  --content-spacing: 1.7em;
+  --custom-border-radius: 0.75em;
+  --default-h5-margin: 0 0 0.5em;
+  --default-p-font-size: 0.875em;
+  --details-default-icon-right-h4-color: var(--color-white);
+  --details-default-icon-right-summary-border-bottom-open-custom: 1px solid var(--color-white);
+  --details-default-summary-child-color-custom: var(--color-mine-shaft);
+  --details-default-svg-color-custom: var(--color-tertiary);
+  --dialog-default-backdrop-background-color-open: rgba(0, 0, 0, .451);
+  --dialog-default-border-radius: var(--custom-border-radius);
+  --dialog-default-border: 0px solid var(--color-white);
+  --download-box-shadow-color-custom: var(--download-color-custom);
+  --download-color-custom: var(--color-tertiary);
+  --emotion-carousel-img-max-height: 65vh;
+  --font-family-bold: PTSansPro-Bold, Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --font-family-secondary: PTSansPro-Regular, Lexend-Regular, JostRegular, Avenir35Light, sans-serif;
+  --font-family: PTSansPro-Regular, Lexend-Regular, JostRegular, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --footer-default-a-text-decoration: none;
+  --footer-default-h-color: var(--color-white);
+  --footer-default-hr-border-bottom: 1px solid white !important;
+  --footer-default-hr-opacity: 1;
+  --footer-default-invert-a-color-hover-custom: var(--color-white);
+  --footer-default-invert-background-color-custom: var(--background-tertiary);
+  --footer-default-invert-color-custom: var(--color-white);
+  --footer-default-invert-color-hover-custom: var(--color-white);
+  --footer-default-invert-orange-a-color-hover-custom: var(--color-white);
+  --footer-default-invert-orange-background-color-custom: var(--color-white);
+  --footer-default-invert-svg-color-custom: var(--background-tertiary);
+  --footer-default-invert-svg-color-hover-custom: var(--color-white);
+  --h-border-after: false;
+  --h-color: var(--color-secondary);
+  --h-font-weight: 900;
+  --h1-font-family: PTSansPro-Bold, Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h1-font-size-mobile: 28px;
+  --h1-font-size: 36px;
+  --h1-line-height: var(--h2-line-height, 37px);
+  --h1-text-align: center;
+  --h2-font-family: PTSansPro-Bold, Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h2-font-size-mobile: 24px;
+  --h2-font-size: 32px;
+  --h2-line-height-mobile: 28px;
+  --h2-line-height: 37px;
+  --h3-font-family: PTSansPro-Bold, Lexend-ExtraBold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h3-font-size-mobile: 22px;
+  --h3-font-size: 30px;
+  --h3-line-height-mobile: 26px;
+  --h3-line-height: 34px;
+  --h4-font-family: PTSansPro-Bold, Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h4-font-size-mobile: 18px;
+  --h4-font-size: 20px;
+  --h4-line-height: 24px;
+  --h5-font-family: PTSansPro-Bold, Lexend-Bold, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h5-font-size-mobile: 18px;
+  --h5-font-size: 20px;
+  --h5-line-height: 24px;
+  --h6-font-family: PTSansPro-Regular, Lexend-Regular, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --h6-font-size-mobile: 16px;
+  --h6-font-size: 18px;
+  --h6-line-height: 24px;
+  --h6-text-align: start;
+  --header-default-a-logo-top-custom: calc(60.5px / 2 - 88px / 2);
+  --header-default-a-logo-top-mobile-custom: -0.5em;
+  --header-default-a-menu-icon-background-color-custom: var(--color-secondary);
+  --header-default-background-color-custom: var(--background-color);
+  --header-default-content-width: max(calc(1200px - var(--content-spacing) * 2), 85%);
+  --header-default-logo-width-custom: min(9em, 138px);
+  --headshot-picture-border-radius: var(--custom-border-radius, 0.75em);
+  --hr-border-bottom: 1px solid var(--color-cod-gray);
+  --hr-border-width: 0 0 2px;
+  --hr-secondary-border-bottom: 2px solid var(--color-secondary);
+  --hr-secondary-opacity: 1;
+  --img-border-radius: var(--custom-border-radius, 0.75em);
+  --language-switcher-delica-content-spacing-custom: .5em;
+  --multi-level-navigation-cafe-royal-a-main-font-size: 1.25em;
+  --multi-level-navigation-cafe-royal-main-ul-justify-content: flex-end;
+  --multi-level-navigation-delica-a-main-content-spacing: 1rem 0.8rem 0 0.8rem;
+  --multi-level-navigation-delica-color: var(--color-cod-gray, black);
+  --multi-level-navigation-delica-hr-border-bottom: 1px solid var(--color-cod-gray, black);
+  --nav-level-item-default-color-custom: var(--color-cod-gray, black);
+  --nav-level-item-default-hover-background-color: var(--background-secondary);
+  --navigation-default-color-custom: var(--color-secondary);
+  --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
+  --navigation-default-color-second-level-custom: var(--color);
+  --p-font-family: Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-size: 16px;
+  --picture-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-close-btn-background-color-mobile: var(--color-secondary);
+  --picture-close-btn-background-color: var(--color-secondary);
+  --picture-cover-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-cover-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-hotspot-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-hotspot-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-scale-up-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-scale-up-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-store-logo-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-store-logo-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-teaser-border-radius-mobile: var(--custom-border-radius, 0.75em);
+  --picture-teaser-border-radius: var(--custom-border-radius, 0.75em);
+  --picture-teaser-img-object-fit: cover;
+  --product-teaser-figcaption-margin-top: 2em;
+  --product-teaser-h3-font-size-mobile: var(--h5-font-size);
+  --product-teaser-modal-border-radius: var(--custom-border-radius, 0.75em);
+  --product-teaser-modal-height: fit-content;
+  --product-teaser-modal-max-width-mobile: 80vw;
+  --product-teaser-modal-product-image-height: 16.25em;
+  --product-teaser-modal-product-image-width: 13.688em;
+  --product-teaser-modal-stores-height: 2.813em;
+  --product-teaser-modal-width: 445px;
+  --product-teaser-text-min-height: calc(6 * 1.5 * var(--p-font-size, 16px));
+  --product-teaser-title-min-height: calc(2 * var(--h3-line-height, 34px));
+  --recipe-table-background-tint: var(--color-spring-wood);
+  --recipe-table-header-height: 3em;
+  --scroll-to-top-host-button-primary-border-radius: var(--custom-border-radius, 0.5em);
+  --search-input-background-color: var(--color-spring-wood);
+  --search-input-width-big: 100%;
+  --standorte-picker-color-active: var(--color);
+  --sustainability-metrics-text-color-secondary: var(--color-white);
+  --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
+  --teaser-overlay-border-radius: var(--custom-border-radius, 0.75em);
+  --teaser-plain-border-radius-mobile-custom: var(--custom-border-radius, 0.75em);
+  --teaser-plain-border-radius-custom: var(--custom-border-radius, 0.75em);
+  --teaser-plain-figcaption-justify-content-custom: flex-start;
+  --teaser-plain-p-line-height-custom: 1.5em;
+  --teaser-round-figcaption-color: var(--color-secondary);
+  --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
+  --ul-li-font-family: Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+}
