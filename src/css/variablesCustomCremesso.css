@@ -100,9 +100,9 @@
   --color-mine-shaft: #212121;
   --color-quaternary: var(--color-concrete);
   --color-secondary: #8A1E40;
-  /* --color-tertiary: #d5895e; */
   --color-silver-chalice: #A4A4A4;
   --color-spring-wood: #F5F3EC;
+  --color-tertiary-cremesso: #d5895e;
   --color-tertiary: var(--color-mine-shaft);
   --color-white: #FFFFFF;
   --color: #353535;
@@ -129,7 +129,7 @@
   --footer-default-hr-border-bottom: 1px solid white !important;
   --footer-default-hr-opacity: 1;
   --footer-default-invert-a-color-hover-custom: var(--color-white);
-  --footer-default-invert-background-color-custom: var(--background-tertiary);
+  --footer-default-invert-background-color-custom: var(--color-tertiary-cremesso);
   --footer-default-invert-color-custom: var(--color-white);
   --footer-default-invert-color-hover-custom: var(--color-white);
   --footer-default-invert-orange-a-color-hover-custom: var(--color-white);
