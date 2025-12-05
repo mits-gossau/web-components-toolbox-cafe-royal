@@ -81,7 +81,6 @@
   --bg-line-height: 1.5em;
   --button-category-background-color-custom: var(--color-quaternary);
   --button-category-background-color-hover-mobile-custom: var(--color-quaternary);
-  --button-primary-background-color-custom: var(--color-tertiary);
   --button-primary-color-hover-custom: var(--color-concrete);
   --carousel-container-background: var(--color-spring-wood);
   --carousel-two-default-background-color: var(--color-spring-wood);
@@ -101,9 +100,9 @@
   --color-mine-shaft: #212121;
   --color-quaternary: var(--color-concrete);
   --color-secondary: #8A1E40;
-  --color-tertiary: #d5895e;
   --color-silver-chalice: #A4A4A4;
   --color-spring-wood: #F5F3EC;
+  --color-tertiary-cremesso: #d5895e;
   --color-tertiary: var(--color-mine-shaft);
   --color-white: #FFFFFF;
   --color: #353535;
@@ -130,7 +129,7 @@
   --footer-default-hr-border-bottom: 1px solid white !important;
   --footer-default-hr-opacity: 1;
   --footer-default-invert-a-color-hover-custom: var(--color-white);
-  --footer-default-invert-background-color-custom: var(--background-tertiary);
+  --footer-default-invert-background-color-custom: var(--color-tertiary-cremesso);
   --footer-default-invert-color-custom: var(--color-white);
   --footer-default-invert-color-hover-custom: var(--color-white);
   --footer-default-invert-orange-a-color-hover-custom: var(--color-white);
@@ -191,7 +190,7 @@
   --navigation-default-color-custom: var(--color-secondary);
   --navigation-default-color-mobile-custom: var(--navigation-default-color-second-level-custom);
   --navigation-default-color-second-level-custom: var(--color);
-  --p-font-family: Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --p-font-family: PTSansPro-Regular, Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
   --p-font-size: 16px;
   --picture-border-radius-mobile: var(--custom-border-radius, 0.75em);
   --picture-border-radius: var(--custom-border-radius, 0.75em);
@@ -234,5 +233,5 @@
   --teaser-plain-p-line-height-custom: 1.5em;
   --teaser-round-figcaption-color: var(--color-secondary);
   --teaser-tile-rounded-h6-figcaption-color-custom: var(--color-secondary);
-  --ul-li-font-family: Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
+  --ul-li-font-family: PTSansPro-Regular, Lexend-Light, HelveticaNowTextBold, HelveticaNowText, Helvetica, Arial, sans-serif;
 }
