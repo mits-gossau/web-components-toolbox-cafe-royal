@@ -18,7 +18,6 @@ export default class OneTrustCombinedGtm extends Shadow() {
   }
 
   connectedCallback () {
-    console.log('OneTrust connected')
     if (this.shouldRenderHTML()) {
       this.renderHTML().then(() => {
         if (this.settingsLink) this.settingsLink.addEventListener('click', this.settingsLinkListener)
