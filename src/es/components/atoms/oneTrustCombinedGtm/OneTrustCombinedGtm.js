@@ -211,24 +211,6 @@ export default class OneTrustCombinedGtm extends Shadow() {
     }))
   }
 
-  // @ts-ignore
-  loadGTM () {
-    // @ts-ignore
-    if (window.OptanonActiveGroups.includes('C0004')) {
-      console.log('Loading GTM')
-    }
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []
-      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
-      const f = d.getElementsByTagName(s)[0]
-      const j = d.createElement(s)
-      const dl = l != 'dataLayer' ? '&l=' + l : ''
-      j.async = true
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
-      f.parentNode.insertBefore(j, f)
-    })(window, document, 'script', 'dataLayer', 'GTM-T2MNDZWL') // Ersetze 'GTM-XXXX' mit deiner GTM-ID
-  }
-
   /**
    * Loads a script dependency called "optanon wrapper"
    * @returns a promise.
