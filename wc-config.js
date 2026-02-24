@@ -263,7 +263,7 @@
     },
     {
       selector: 'cr-a-',
-      url: 'atoms',
+      url: 'atoms/',
       separateFolder: true
     }
   ] // directories
