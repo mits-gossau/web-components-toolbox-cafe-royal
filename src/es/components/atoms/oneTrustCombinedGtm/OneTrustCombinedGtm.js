@@ -79,6 +79,7 @@ export default class OneTrustCombinedGtm extends Shadow() {
 
   async renderScripts () {
     const snippet = this.snippet
+    await this.callOptanonWrapper() // load custom optanonWrapper function including loadGTM() in both cases: <template> snippet or with id
     if (snippet) {
       await this.injectSnippetIntoHead(snippet)
       return
@@ -87,7 +88,6 @@ export default class OneTrustCombinedGtm extends Shadow() {
     // fallback: previous path via id
     await this.loadCookieLawDependency(this.id)
     await this.loadCookieLawScriptTemplates(this.id)
-    await this.callOptanonWrapper()
   }
 
   /**
